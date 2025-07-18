@@ -1,0 +1,121 @@
+.root {
+  background-color: #f9f9f9;
+}
+
+.cardsContainer {
+  display: flex;
+  margin-top: clamp(1rem, 1.67rem, 2rem);
+  width: 100%;
+  align-items: start;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Gellix, sans-serif;
+  padding: clamp(2rem, 3.33rem, 4rem) clamp(2rem, 4.5rem, 5rem) clamp(15rem, 22.29rem, 25rem);
+  margin-bottom: clamp(-25rem, -23rem, -20rem);
+}
+
+.content {
+  display: flex;
+  max-width: 100%;
+  width: min(85%, 1400px); /* Using percentage with max-width limit */
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--Primary-text-clr, #000);
+  text-align: center;
+  font-family: Gellix;
+  font-size: clamp(2rem, 3.2rem, 4rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  color: var(--Secondary-text-clr, #545251);
+  text-align: center;
+  font-family: Gellix;
+  font-size: clamp(1rem, 1.3rem, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: clamp(1.5rem, 2rem, 2.5rem);
+  margin-bottom: clamp(1rem, 1.5rem, 2rem);
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    padding: 2.5rem 3rem 18rem;
+    margin-bottom: -18rem;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 2.5rem, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(0.875rem, 1.1rem, 1.25rem);
+    line-height: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 58rem) { 
+  .container {
+    padding: 2rem 1.5rem 15rem;
+    margin-bottom: -15rem;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .container {
+    padding: 1.5rem 1rem 12rem;
+    margin-bottom: -12rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}

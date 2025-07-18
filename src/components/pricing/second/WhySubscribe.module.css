@@ -1,0 +1,154 @@
+.container {
+  background-color: rgba(249, 249, 249, 1);
+  display: flex;
+  padding: clamp(3rem, 6.25rem, 8rem) 0.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+}
+
+.header {
+  color: #000000;
+  width: 100%;
+}
+
+.title {
+  font-size: clamp(2rem, 3.2rem, 4rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.3rem, 1.5rem);
+  font-weight: 400;
+  line-height: 1;
+  margin: 1rem 0 0;
+}
+
+.statsGrid {
+  display: flex;
+  margin-top: clamp(3rem, 6.25rem, 8rem);
+  align-items: flex-end;
+  gap: 1rem;
+  text-align: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.statCard {
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.5rem 0 rgba(49, 61, 235, 1);
+  display: flex;
+  min-width: 15rem;
+  padding: 1.2rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: clamp(15rem, 20.4375rem, 25rem);
+}
+
+.statCard:hover {
+  border-radius: 1.5rem;
+  background: #DADFEC;
+  box-shadow: 0 0.5rem 0 #313DEB, 0 0.25rem 0.4375rem rgba(0, 0, 0, 0.05);
+}
+
+.cardIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(2rem, 3.375rem, 4rem);
+  align-self: center;
+}
+
+.cardTitle {
+  color: #000000;
+  font-size: clamp(1rem, 1.3rem, 1.5rem);
+  font-weight: 500;
+  line-height: 1;
+  margin: 1.5rem 0 0;
+}
+
+.cardValue {
+  color: #313DEB;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: 600;
+  margin: 1.5rem 0 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .statsGrid {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .statCard {
+    min-width: calc(33.33% - 1rem);
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: clamp(1.75rem, 2.5rem, 3rem);
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .statsGrid {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .statCard {
+    min-width: calc(50% - 1rem);
+    padding: 1rem;
+  }
+
+  .cardIcon {
+    width: 2.5rem;
+  }
+
+  .cardTitle {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+  }
+
+  .cardValue {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .statCard {
+    min-width: 100%;
+  }
+
+  .cardIcon {
+    width: 2rem;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardValue {
+    font-size: 1.25rem;
+  }
+}

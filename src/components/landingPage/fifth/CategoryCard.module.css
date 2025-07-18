@@ -1,0 +1,38 @@
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 13.6rem;
+  margin: auto 0;
+}
+
+.iconWrapper {
+  border-radius: 5.2rem;
+  background-color: rgba(208, 220, 255, 1);
+  width: 5.6rem;
+  height: 5.6rem;
+  display: flex;
+  padding: 1.25rem;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: fill;
+  width: 3.125rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #636363;
+  font-family: "Gellix";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 0;
+}

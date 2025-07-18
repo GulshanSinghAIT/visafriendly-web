@@ -1,0 +1,187 @@
+.resumeItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+  flex-wrap: nowrap;
+  outline: 1px solid #c3bcbc;
+  border-radius: 1px;
+  outline-offset: clamp(0.5rem, 0.7rem, 0.9rem);
+  margin-bottom: clamp(2rem, 2.6rem, 3rem);
+}
+
+.resumeItem.pdfItem {
+  justify-content: space-between;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+  flex: 1;
+}
+
+.fileIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(3rem, 3.725rem, 4.5rem);
+}
+
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fileName {
+  color: rgb(31, 41, 55);
+  font-size: clamp(1rem, 1.1375rem, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.061rem;
+}
+
+.fileInfo {
+  color: rgb(99, 99, 99);
+  font-size: clamp(0.875rem, 1.085rem, 1.25rem);
+  font-weight: 500;
+  line-height: 1.54;
+  margin-top: clamp(0.15rem, 0.208rem, 0.25rem);
+}
+
+.actionWrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.4rem, 0.52rem, 0.6rem);
+  justify-content: flex-end;
+}
+
+.defaultButton,
+.makeDefaultButton {
+  font-size: 1em;
+  font-weight: 500;
+  padding:0.6em 0.8em;
+  border-radius: 0.317rem;
+  border: 1px solid #313deb;
+  background-color: white;
+  color: #313deb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.makeDefaultButton {
+  padding:0.6em 0.8em;
+  border-color: #2563EB;
+  color: #2563EB;
+}
+
+.defaultButton {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+.defaultButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.actionIcon {
+  width: clamp(1rem, 1.15rem, 1.3rem);
+  height: clamp(1rem, 1.15rem, 1.3rem);
+  cursor: pointer;
+  margin-left: clamp(1rem, 1.2rem, 1.4rem);
+  transition: transform 0.2s ease;
+}
+
+.divider {
+  border-top: 1px solid rgb(200, 200, 200);
+  margin: 0.833rem 0;
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .resumeItem {
+    gap: 0.875rem;
+    padding: 1rem;
+  }
+
+  .actionWrapper {
+    gap: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 62rem) { /* 960px */
+  .resumeItem {
+    flex-wrap: wrap;
+    padding: 0.875rem;
+  }
+
+  .contentWrapper {
+    width: 100%;
+  }
+
+  .actionWrapper {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .defaultButton,
+  .makeDefaultButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .resumeItem {
+    margin-bottom: 1.5rem;
+    outline-offset: 0.5rem;
+  }
+
+  .fileIcon {
+    width: 2.5rem;
+  }
+
+  .fileName {
+    font-size: 1rem;
+  }
+
+  .fileInfo {
+    font-size: 0.875rem;
+  }
+
+  .actionIcon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.875rem;
+  }
+}
+
+/* Hover effects */
+@media (hover: hover) {
+  .defaultButton:hover:not(:disabled),
+  .makeDefaultButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .actionIcon:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .defaultButton,
+  .makeDefaultButton {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .actionIcon {
+    padding: 0.5rem;
+    margin: -0.5rem;
+  }
+}

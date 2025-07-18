@@ -1,0 +1,68 @@
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 33.875vw;
+    border-radius: 1vw;
+    background: var(--Overlays-Modal-Bg-Color, #fff);
+    box-shadow: 0 1.25vw 0.8125vw 0 rgba(0, 0, 0, 0.03),
+      0 0.5vw 0.3125vw 0 rgba(0, 0, 0, 0.08);
+    padding: 1vw;
+    height:35vw;
+  }
+  
+  .illustration {
+    width: 19.3125vw;
+    aspect-ratio: 1.16;
+    object-fit: contain;
+    align-self: center;
+  }
+  
+  .content {
+    margin-top: 2vw;
+    text-align: center;
+    font-family: Gellix, sans-serif;
+  }
+  
+  .title {
+    color: var(--Overlays-Modal-Title-Color, #1f2937);
+    font-size: 1.9vw;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .message {
+    color: var(--Secondary-text-clr, #545251);
+    font-size: 1.1vw;
+    line-height: 1.75vw;
+    margin: 1vw 0 0;
+    padding-left:2vw;
+    padding-right: 2vw;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 2vw;
+    width: 24.8125vw;
+    max-width: 100%;
+    align-self: center;
+  }
+  
+  @media (max-width: 991px) {
+    .modal {
+      padding: 0 1.25vw;
+    }
+    
+    .content {
+      max-width: 100%;
+    }
+    
+    .title {
+      max-width: 100%;
+    }
+    
+    .message {
+      max-width: 100%;
+    }
+  }

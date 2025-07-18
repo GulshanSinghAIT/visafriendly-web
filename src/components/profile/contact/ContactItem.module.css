@@ -1,0 +1,81 @@
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 0.9rem, 1rem);
+  letter-spacing: 0.008rem;
+  justify-content: start;
+  margin-top: clamp(1.25rem, 1.5rem, 1.75rem);
+  max-width: clamp(20rem, 28.25rem, 35rem);
+}
+
+.contactIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(1rem, 1.2rem, 1.4rem);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.contactText {
+  align-self: stretch;
+  margin: auto 0;
+  font-size: clamp(1rem, 1.15rem, 1.25rem);
+  color: rgba(84, 82, 81, 1);
+  font-weight: 400;
+  line-height: 1.2; /* Adjusted from 0.5 for better readability */
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .contactItem {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .contactIcon {
+    width: 1.1rem;
+  }
+
+  .contactText {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .contactItem {
+    gap: 0.625rem;
+    margin-top: 1rem;
+  }
+
+  .contactIcon {
+    width: 1rem;
+  }
+
+  .contactText {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .contactItem {
+    gap: 0.5rem;
+    margin-top: 0.875rem;
+  }
+
+  .contactIcon {
+    width: 0.875rem;
+  }
+
+  .contactText {
+    font-size: 0.75rem;
+  }
+}
+
+/* For better touch targets on mobile devices */
+@media (hover: none) {
+  .contactItem {
+    padding: 0.5rem 0;
+  }
+}
+

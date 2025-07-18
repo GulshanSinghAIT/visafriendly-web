@@ -1,0 +1,852 @@
+.JobsAfterSignIn {
+    width: 100vw;
+    min-height: 110vw;
+    background: linear-gradient(180deg, #D0DCFF 0%, #F9F9F9 30%);
+}
+
+.jobListingHead {
+    z-index: 100;
+    position: relative;
+    width: 100vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allListings {
+    max-width: 82em;
+    width: 98%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+
+.jobListSortFilters {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.totalJobsFound {
+    width: 13.8020834vw;
+    flex-shrink: 0;
+    color: var(--Accent-clr, #313DEB);
+    font-family: Gellix;
+    font-size: 1.67vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.totalJobsFilters {
+    display: flex;
+    align-items: center;
+    gap: 1.04167vw;
+}
+
+.sortFilterByDate {
+    display: flex;
+    padding: 0.7em;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--Brand-bg-for-icons, rgba(0, 16, 236, 0.12));
+}
+
+.sortFilterByDate svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.jobListingsData {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2em;
+}
+
+.allJobDataCards {
+    height: 84em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    flex-shrink: 0;
+}
+
+.jobDataCards {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5em;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.jobDataCards::-webkit-scrollbar {
+    display: none;
+}
+
+.jobDataCard {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.520834vw;
+    align-self: stretch;
+    border-radius: 0.6em;
+    border: 0.0520834vw solid var(--Border, #D9D9D9);
+    background: #FFF;
+    cursor: pointer;
+}
+
+.jobDataCardBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.520834vw;
+    align-self: stretch;
+    cursor: pointer;
+    border-radius: 0.6em;
+    border: 0.0520834vw solid var(--Accent-clr, #313DEB);
+    background: #FFF;
+
+    /* Large */
+    box-shadow: 0vw 0.520834vw 0.4167vw 0vw rgba(121, 121, 121, 0.04), 0vw 0.20834vw 0.15625vw 0vw rgba(121, 121, 121, 0.10);
+}
+
+.jobDataCardInner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.04167vw;
+    align-self: stretch;
+}
+
+.dropDownCatNames {
+    cursor: pointer;
+}
+
+.jobDataCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.jobListingJobName {
+    display: flex;
+    align-items: center;
+    gap: 1.04167vw;
+}
+
+.jobListingBookmark {
+    display: flex;
+    align-items: center;
+    gap: 0.4167vw;
+}
+
+.jobListingBookmark svg {
+    width: 1.5625vw;
+    height: 1.5625vw;
+}
+
+.jobListingImage {
+    min-width: 3em;
+    min-height: 3em;
+    width: 3em;
+    height: 3em;
+    border-radius: 0.17359375vw;
+    background: url("/public/images/companyLogo.png") lightgray 50% / cover no-repeat;
+}
+
+.jobListingImageBig {
+    width: 5.3125vw;
+    height: 5.3125vw;
+    border-radius: 0.17359375vw;
+    background: url("/public/images/companyLogo.png") #fff 50% / cover no-repeat;
+}
+
+.jobListingDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.20834vw;
+    align-self: stretch;
+}
+
+.jobListingRole {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;     /* Show max 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 125%;
+}
+
+.jobListingCompanyName {
+    color: var(--Secondary-text-clr, #545251);
+    text-align: center;
+    font-family: Gellix;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.273%;
+}
+
+.horizontalLine {
+    width: 100%;
+    height: 0.0520834vw;
+    background: #E2E2E2;
+}
+
+.jobCardJobDetails {
+    display: flex;
+    align-items: center;
+    gap: 0.4167vw;
+    align-self: stretch;
+}
+
+.jobCardLocExp,
+.jobCardTypeSal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.04167vw;
+    flex: 1 0 0;
+}
+
+.jobCardLoc,
+.jobCardExp,
+.jobCardType,
+.jobCardSal {
+    display: flex;
+    align-items: center;
+    gap: 0.4167vw;
+    align-self: stretch;
+}
+
+.jobCardLoc div,
+.jobCardExp div,
+.jobCardType div,
+.jobCardSal div {
+    color: var(--Secondary-text-clr, #545251);
+    text-align: center;
+
+    /* Sub content 2 */
+    font-family: Gellix;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.273%;
+}
+
+.jobCardLoc svg,
+.jobCardExp svg,
+.jobCardType svg,
+.jobCardSal svg {
+    width: 1.25vw;
+    height: 1.25vw;
+}
+
+.jobDataCardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 10px;
+}
+
+.jobCardApplicants {
+    display: flex;
+    padding: 0.20834vw 0.625vw;
+    align-items: center;
+    gap: 0.4167vw;
+    border-radius: 0.3125vw;
+    background: #D0DCFF;
+}
+
+.jobCardApplicants div {
+    color: #313DEB;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.444%;
+}
+
+.jobCardDaysAgo {
+    display: flex;
+    align-items: center;
+    gap: 0.1556770834vw;
+}
+
+.jobCardDaysAgo svg {
+    height: 1.145834vw;
+    width: 1.145834vw;
+}
+
+.jobCardDaysAgo div {
+    color: var(--Secondary-text-clr, #545251);
+    text-align: center;
+    font-family: "Gellix";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 81.53%;
+}
+
+.jobCardPagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.paginationPrev,
+.paginationNext {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem;
+    border-radius: 8px;
+    color: #6b7280;
+    font-family: Gellix;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.paginationPrev:hover,
+.paginationNext:hover {
+    background: #f8fafc;
+    color: #313DEB;
+    border-color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+.paginationPrev:active,
+.paginationNext:active {
+    transform: translateY(0);
+}
+
+.paginationPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.clickablePagination {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #6b7280;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.clickablePagination:hover {
+    background: #f8fafc;
+    color: #313DEB;
+    border-color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+.clickablePagination:active {
+    transform: translateY(0);
+}
+
+.clickedPagination {
+    display: flex;
+    width: 2.15rem;
+    height: 2.15rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #313DEB;
+    color: #ffffff;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid #313DEB;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.clickedPagination::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+}
+
+.clickedPagination:hover {
+    background: linear-gradient(135deg, #2a2fd8 0%, #4338ca 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(49, 61, 235, 0.35);
+}
+
+.nonClickablePagination {
+    display: flex;
+    width: 2.15rem;
+    height: 2.15rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #d1d5db;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 0.875rem;
+    font-weight: 500;
+    user-select: none;
+    pointer-events: none;
+}
+
+.symbolNext {
+    color: #6b7280;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.paginationPrev:hover .symbolNext,
+.paginationNext:hover .symbolNext {
+    color: #313DEB;
+}
+
+.symbolText {
+    color: #6b7280;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.paginationPrev:hover .symbolText,
+.paginationNext:hover .symbolText {
+    color: #313DEB;
+}
+
+/* Disabled state for pagination buttons */
+.paginationPrev:disabled,
+.paginationNext:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.paginationPrev:disabled:hover,
+.paginationNext:disabled:hover {
+    background: transparent;
+    color: #6b7280;
+    border-color: transparent;
+    transform: none;
+}
+
+/* Responsive design for pagination */
+@media screen and (max-width: 768px) {
+    .jobCardPagination {
+        gap: 0.5rem;
+    }
+    
+    .paginationPrev,
+    .paginationNext {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .clickablePagination,
+    .clickedPagination,
+    .nonClickablePagination {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 0.8rem;
+    }
+    
+    .symbolNext {
+        font-size: 0.9rem;
+    }
+    
+    .symbolText {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .jobCardPagination {
+        gap: 0.25rem;
+    }
+    
+    .paginationPrev,
+    .paginationNext {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+        gap: 0.25rem;
+    }
+    
+    .clickablePagination,
+    .clickedPagination,
+    .nonClickablePagination {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.75rem;
+    }
+    
+    .paginationPages {
+        gap: 0.25rem;
+    }
+}
+
+.filterCover .multiSelectSetDrop {
+    width: 11.979167vw;
+    padding: 0.4167vw 0vw;
+}
+
+.multiSelectSetDrop {
+    position: absolute;
+    display: flex;
+    width: 14.84375vw;
+    padding-top: 0.4167vw;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: var(--Overlays-Dropdowns-Border-Radius, 0.625vw);
+    border: 0.0520834vw solid var(--Overlays-Dropdowns-Border-Color, #E5E7EB);
+    background: var(--Overlays-Dropdowns-Bg-Color, #FFF);
+
+    /* Default */
+    box-shadow: 0vw 0.0520834vw 0.104167vw 0vw rgba(121, 121, 121, 0.10), 0vw 0.0520834vw 0.0520834vw 0vw rgba(0, 0, 0, 0.06);
+}
+
+.jobDataCardBorder {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10vw;
+    align-self: stretch;
+    cursor: pointer;
+    border-radius: 0.6em;
+    border: 0.0520834vw solid var(--Accent-clr, #313DEB);
+    background: #FFF;
+}
+
+.dropDownCatName {
+    display: flex;
+    padding: var(--Overlays-Dropdowns-List-Heading-Spacing-Y, 0.4167vw) 1.25vw;
+    align-items: flex-start;
+    align-self: stretch;
+    color: var(--Overlays-Dropdowns-List-Heading-Color, #6B7280);
+    font-family: Gellix;
+    font-size: 0.834vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.834vw;
+    /* 100% */
+    letter-spacing: 50%;
+}
+
+.dropDownCatNames {
+    display: flex;
+    padding: 0.625vw 1.25vw;
+    align-items: center;
+    gap: 0.625vw;
+    align-self: stretch;
+}
+
+.dropDownCatNames div {
+    color: var(--Basic-Forms-Checkbox-Placeholder-Color, #1F2937);
+    font-family: Gellix;
+    font-size: 1.04167vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 50%;
+}
+
+
+.sliders {
+    display: flex;
+    padding: 0.625vw 1.25vw;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.625vw;
+    border-radius: var(--Overlays-Dropdowns-List-Item-Border-Radius, 0.4167vw);
+}
+
+.slidersTextRange {
+    color: var(--Primary-text-clr, #000);
+    font-family: Gellix;
+    font-size: 1.04167vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 50%;
+    align-self: flex-start;
+}
+
+.sliders .slider {
+    width: 15.6770834vw;
+    height: 0.3125vw;
+    flex-shrink: 0;
+    border-radius: 5.20834vw;
+    /* opacity: 0.2; */
+    background: #bfbfcc;
+}
+
+.sliders .thumb {
+    width: 0.834vw;
+    height: 0.834vw;
+    border-radius: 120%;
+    background-color: #FFF;
+    cursor: grab;
+    border: 0.02604167vw solid #c7c4c4;
+    top: -0.2604167vw;
+}
+
+.thumb:focus-visible {
+    outline-color: #313DEB;
+}
+
+.exampleTrack.exampleTrack-1 {
+    background: #313DEB;
+}
+
+.sliders .exampleTrack {
+    height: 0.3125vw;
+}
+
+.jobListingSkills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.skillsInfo {
+    font-size: 14px;
+    color: #545251;
+}
+
+.skillMatch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.matchChart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchPercentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.jobExpansionContainer {
+    position: relative;
+    width: 65%;
+    flex-shrink: 0;
+}
+
+.backButton {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Gellix;
+    font-size: 14px;
+    color: #545251;
+    margin-bottom: 15px;
+}
+
+.backButton svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .JobsAfterSignIn {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .jobListingHead {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .allListings {
+        padding: 20px;
+    }
+
+    .jobListSortFilters {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .totalJobsFound {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .jobListingsData {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .allJobDataCards {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .jobExpansionContainer {
+        width: 100%;
+    }
+
+    .jobDataCards {
+        width: 100%;
+    }
+
+    .jobDataCard,
+    .jobDataCardBorder {
+        padding: 15px;
+    }
+
+    .jobListingRole {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .jobListingCompanyName {
+        font-size: 14px;
+    }
+
+    .horizontalLine {
+        width: 100%;
+    }
+
+    /* Hide JobCardExpansion by default on mobile */
+    .jobListingsData > div:last-child {
+        display: none;
+    }
+
+    /* Show JobCardExpansion when a card is clicked */
+    .jobListingsData.showExpansion > div:last-child {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Hide job cards when expansion is shown */
+    .jobListingsData.showExpansion .allJobDataCards {
+        display: none;
+    }
+
+    .backButton {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .totalJobsFilters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sortFilterByDate {
+        padding: 10px;
+    }
+
+    .sortFilterByDate svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .jobCardJobDetails {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jobCardLocExp,
+    .jobCardTypeSal {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .jobListingJobName {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .allListings {
+        padding: 5px;
+    }
+    .jobListingImage {
+        width: 50px;
+        height: 50px;
+    }
+
+    
+}

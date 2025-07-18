@@ -1,0 +1,173 @@
+.inputWrapper {
+  width: 100%;
+}
+
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputLabel {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+.inputField {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.input::placeholder {
+  color: #6B7280 !important;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #313DEB;
+  box-shadow: 0 0 0 2px rgba(49, 61, 235, 0.1);
+}
+
+/* Error State */
+.input.error {
+  border-color: #ef4444;
+}
+
+.input.error:focus {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.1);
+}
+
+/* Disabled State */
+.input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .inputLabel {
+    font-size: 14px;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .inputWrapper {
+    max-width: 22rem;
+  }
+
+  .input {
+    font-size: 0.875rem;
+  }
+
+  .input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .inputWrapper {
+    max-width: 100%;
+  }
+
+  .inputLabel {
+    font-size: 1rem;
+  }
+
+  .input {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .input::placeholder {
+    font-size: 0.875rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .inputField {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(229, 231, 235, 0.2);
+  }
+
+  .input {
+    color: #6B7280;
+  }
+
+  .input::placeholder {
+    color: rgba(229, 231, 235, 0.5);
+  }
+
+  .input:disabled {
+    background-color: rgba(243, 244, 246, 0.1);
+  }
+}
+
+/* High Contrast Mode */
+@media (forced-colors: active) {
+  .inputField {
+    border: 2px solid currentColor;
+  }
+
+  .inputField:focus-within {
+    outline: 2px solid highlight;
+  }
+}
+
+/* Touch Devices */
+@media (hover: none) {
+  .input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .inputField,
+  .input {
+    transition: none;
+  }
+}
+
+/* Autofill Styles */
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  -webkit-text-fill-color: var(--Secondary-text-clr, #545251);
+}
+
+/* Dark mode autofill */
+@media (prefers-color-scheme: dark) {
+  .input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #6B7280;
+  }
+}

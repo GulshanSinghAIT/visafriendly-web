@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  max-width: clamp(20rem, 28.25rem, 35rem);
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: clamp(1.5rem, 2.05rem, 2.5rem);
+  border-radius: 0.6rem;
+  transform: translate(clamp(8rem, 10.3rem, 12rem), clamp(7rem, 9rem, 11rem));
+  border: 1px solid #D9D9D9;
+  
+}
+
+.userName {
+  color: rgba(0, 0, 0, 1);
+  font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+  line-height: 1.2; /* Adjusted from 0.8 for better readability */
+  letter-spacing: 0.01rem;
+  margin-top: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.editWrapper {
+  transform: translate(clamp(2rem, 2.825rem, 3.5rem), clamp(-2.5rem, -2.275rem, -2rem));
+  width: clamp(2rem, 2.5rem, 3rem);
+  height: clamp(2rem, 2.5rem, 3rem);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit {
+  width: clamp(0.875rem, 1.125rem, 1.25rem);
+  height: clamp(0.875rem, 1.125rem, 1.25rem);
+  color: #545251;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    max-width: 25rem;
+    padding: 1.75rem;
+    transform: translate(8rem, 7rem);
+  }
+
+  .editWrapper {
+    transform: translate(2.25rem, -2rem);
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .edit {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .container {
+    max-width: 20rem;
+    padding: 1.5rem;
+    transform: translate(5rem, 5rem);
+  }
+
+  .userName {
+    font-size: 1.25rem;
+  }
+
+  .editWrapper {
+    transform: translate(1.75rem, -1.75rem);
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .edit {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .container {
+    max-width: 90%;
+    padding: 1.25rem;
+    transform: translate(1rem, 3rem);
+  }
+
+  .userName {
+    font-size: 1.125rem;
+  }
+
+  .editWrapper {
+    transform: translate(1.5rem, -1.5rem);
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+/* Hover states for desktop */
+@media (hover: hover) {
+  .editWrapper:hover {
+    background-color: #f5f5f5;
+    border-color: #313DEB;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .editWrapper {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  .edit {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

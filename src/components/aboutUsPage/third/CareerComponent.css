@@ -1,0 +1,122 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .career-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px; */
+    height: 597px;
+    margin-inline: auto;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-left: 121px;
+    margin-right: 121px;
+    margin-top: 150px;
+    gap:100px;
+  }
+  
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 521px;
+    width: 25%;
+    /* gap: 44px; */
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item hr{
+    margin-top :44px;
+    margin-bottom :44px;
+    height: 0.075em;
+    background-color: #a7a3a3;
+  }
+
+  .stat-number {
+    font-size: 50px;
+    color: #313deb;
+    font-weight: 700;
+    line-height: 62.85px;
+    margin-bottom: 24px;
+  }
+  
+  .stat-description {
+    font-size: 18px;
+    color: #000;
+    line-height: 28px;
+  }
+  
+  .image-section {
+    position: relative;
+  }
+
+  
+  .career-image {
+    max-width: none;
+    width: 600px;
+    height: 597px;
+    border-radius: 10px;
+  }
+  
+  .career-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .info-section {
+    object-fit: fill;
+    max-width: 548px;
+    height: 597px;
+    text-align: left;
+  }
+  
+  .about-link {
+    color: #313deb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+  }
+
+  .info-section h1{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 14px;
+    margin-top: 16px;
+  }
+  
+  .info-section p{
+    font-size: 24px;
+    color: #545251;
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+  
+  .sign-up-button {
+    background-color: #313deb;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 16px;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .sign-up-button:hover {
+    background-color: #2a37b8;
+  }
+  
+  

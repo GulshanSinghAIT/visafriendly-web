@@ -1,0 +1,82 @@
+.trustedSection{
+    display: flex;
+padding: 7.8125vw 4.4270834vw 9.1145834vw 4.4270834vw;
+flex-direction: column;
+align-items: flex-start;
+gap: 7.5520834vw;
+align-self: stretch;
+background: #fff;
+}
+
+.trustedSectionHead{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 0.4167vw;
+align-self: stretch;
+}
+
+.trustedMainHeading{
+    color: var(--Accent-clr, #313DEB);
+font-family: Gellix;
+font-size: 1.25vw;
+font-style: normal;
+font-weight: 400;
+line-height: 133.333%
+}
+
+.trustedSubHeading{
+    color: var(--Primary-text-clr, #000);
+
+/* H3 */
+font-family: Gellix;
+font-size: 3.125vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+width: 44.4270834vw;
+}
+
+.trustedBody{
+    display: flex;
+width: 91.09375vw;
+flex-direction: column;
+align-items: flex-start;
+gap: 5.9375vw;
+}
+
+.trustedUniversityGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2vw;
+    width: 100%;
+    align-items: center;
+}
+
+.universityItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.645834vw;
+}
+
+.universityItem img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .trustedUniversityGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .trustedUniversityGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}

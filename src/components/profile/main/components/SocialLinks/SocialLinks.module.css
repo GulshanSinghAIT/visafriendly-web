@@ -1,0 +1,157 @@
+.socialLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(-10rem, -9.58rem, -8rem) !important;
+  width: 125%;
+  row-gap: 1.4rem;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.208rem;
+}
+
+.socialLinkLinkedin,
+.socialLinkTwitter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.208rem;
+  margin-left: clamp(-5rem, -4.7rem, -4rem);
+  width: 100%;
+}
+
+.socialHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.833rem;
+}
+
+.socialLabel {
+  color: #1F2937;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 1.0375rem, 1.25rem);
+  letter-spacing: 0.006rem;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.417rem;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.protocolInput {
+  border: 1px solid #E5E7EB;
+  background-color: #ffffff;
+  padding: 0.525rem 0.833rem;
+  font-size: clamp(0.875rem, 1.1375rem, 1.25rem);
+  color: #6B7280;
+  text-align: center;
+  width: 28%;
+}
+
+.restInput {
+  border: none;
+  background-color: transparent;
+  padding: 0.525rem 0.833rem;
+  font-size: clamp(0.875rem, 1.1375rem, 1.25rem);
+  color: #6B7280;
+  flex: 1;
+  outline: none;
+}
+
+.protocolInput::placeholder,
+.restInput::placeholder {
+  font-size: clamp(0.875rem, 1.1375rem, 1.25rem);
+  color: #545251;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .socialLinks {
+    column-gap: -8rem !important;
+    row-gap: 1.2rem;
+  }
+
+  .socialLinkLinkedin,
+  .socialLinkTwitter {
+    margin-left: -4rem;
+  }
+
+  .inputGroup {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .socialLinks {
+    grid-template-columns: 1fr;
+    column-gap: 0 !important;
+    width: 100%;
+    row-gap: 1rem;
+  }
+
+  .socialLinkLinkedin,
+  .socialLinkTwitter {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .socialLabel {
+    font-size: 1rem;
+  }
+
+  .inputGroup {
+    width: 100%;
+  }
+
+  .protocolInput,
+  .restInput,
+  .protocolInput::placeholder,
+  .restInput::placeholder {
+    font-size: 0.875rem;
+    padding: 0.45rem 0.625rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .socialLinks {
+    row-gap: 0.875rem;
+  }
+
+  .socialHeader {
+    gap: 0.625rem;
+  }
+
+  .socialLabel {
+    font-size: 0.875rem;
+  }
+
+  .protocolInput,
+  .restInput {
+    padding: 0.375rem 0.5rem;
+  }
+
+  .protocolInput {
+    width: 30%;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .protocolInput,
+  .restInput {
+    min-height: 2.75rem; /* Larger touch targets */
+  }
+
+  .inputGroup {
+    margin-bottom: 0.5rem;
+  }
+}

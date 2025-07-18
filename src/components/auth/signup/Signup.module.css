@@ -1,0 +1,209 @@
+.signupWrapper {
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  transform: none;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  color: #6b7280;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.formFields {
+  margin-bottom: 15px;
+}
+
+.formFields label {
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputWrapper {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.input1, .input {
+  padding: 12px 14px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 400;
+  height: 48px;
+  border: none;
+  outline: none;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: #4338ca;
+  color: #ffffff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #3730a3;
+}
+
+.loginPrompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loginText {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.loginLink {
+  font-size: 14px;
+  color: #4338ca;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.dividerText {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.googleButton:hover {
+  background-color: #f3f4f6;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.inputWrapperError {
+  border-color: #ef4444;
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.fieldError {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.termsText {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.termsCheckbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.termsLabel {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.termsLink {
+  color: #4338ca;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 4px;
+}
+
+.termsLink:hover {
+  text-decoration: underline;
+}

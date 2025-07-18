@@ -1,0 +1,683 @@
+.gradientContainer {
+  background: linear-gradient(180deg, #D0DCFF 0%, #F9F9F9 92.34%);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2rem; 
+  left: 2rem; 
+  right: 2rem; 
+  gap: 1rem; 
+}
+
+.main{
+  display: flex;
+  width: 75%;
+  max-width: 1200px;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: row;
+  margin-bottom: 6rem;
+}
+
+.jobCardsBefore{
+  display: flex;
+  width: 65%;
+  height: 70vh;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.recommendsAlerts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1 0 0;
+}
+
+.recommends{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 1rem;
+}
+
+.alerts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+}
+
+.recommendsText{
+  display: flex;
+  height: 3rem;
+  padding: 0.8rem 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  border: 1px solid var(--Border, #D9D9D9);
+  background: var(--White, #FFF);
+  color: var(--Primary-text-clr, #000);
+  font-family: Gellix;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109.375%;
+}
+
+.recommendsContent{
+  display: flex;
+  padding: 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  border-right: 1px solid var(--Border, #D9D9D9);
+  border-bottom: 1px solid var(--Border, #D9D9D9);
+  border-left: 1px solid var(--Border, #D9D9D9);
+  background: var(--White, #FFF);
+}
+
+.contentMatter{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.clickableMatter{
+  color: var(--Accent-clr, #313DEB);
+  font-family: Gellix;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  align-self: stretch;
+  cursor: pointer;
+}
+
+.alertsText{
+  display: flex;
+  height: 3rem;
+  padding: 0.8rem 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  color: var(--Primary-text-clr, #000);
+  font-family: Gellix;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109.375%;
+  border: 1px solid var(--Border, #D9D9D9);
+  background: var(--White, #FFF);
+}
+
+.alertsContent{
+  display: flex;
+  padding: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+gap: 0.5rem;
+align-self: stretch;
+border-right: 1px solid var(--Border, #D9D9D9);
+border-bottom: 1px solid var(--Border, #D9D9D9);
+border-left: 1px solid var(--Border, #D9D9D9);
+background: var(--White, #FFF);
+}
+
+.alertsBut{
+  width: 100%;
+  display: flex;
+  padding: 0.8rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 0 0;
+  border-radius: 0.6rem;
+  background: var(--Accent-clr, #313DEB);
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Gellix;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.alertsForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.jobInputs{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.jobHead{
+  color: var(--Primary-text-clr, #000);
+  font-family: Gellix;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; 
+}
+
+.jobInput{
+  border-radius: 0.4rem;
+  border: 1px solid var(--Basic-Forms-Input-Border-Border-Color, #E5E7EB);
+  background: var(--Basic-Forms-Input-Background-Bg-Color, #FFF);
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 0.8rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 0 0;
+  color: var(--Secondary-text-clr, #545251);
+  font-family: Gellix;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127.273%;
+}
+
+.jobCardsBefore::-webkit-scrollbar {
+  display: none;
+}
+
+.careerOp{
+  display: flex;
+  height: auto;
+  min-height: 12rem;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.careerCont{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  flex: 1 0 0;
+}
+
+.careerContHead{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  color: var(--Primary-text-clr, #000);
+  font-family: Gellix;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.careerContMid{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.careerContMidCont{
+  color: var(--Secondary-text-clr, #545251);
+  font-family: Gellix;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+
+.ellipseImage{
+  width: 8rem;
+  height: 3rem;
+}
+
+.buttons{
+  display: flex;
+  width: auto;
+  min-width: 12rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.buttons button{
+  display: flex;
+  padding: 1rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.loginBut{
+  border-radius: 0.6rem;
+  border: 1px solid var(--Components-Button-White-Border-Color, #E5E7EB);
+  background: var(--Components-Button-White-Bg-Color, #FFF);
+  height: 3rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: var(--Primary-text-clr, #000);
+  text-align: center;
+  font-family: Gellix;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.signUpBut{
+  height: 3rem;
+  color: var(--Primary-text-clr, #fff);
+  text-align: center;
+  border-radius: 0.6rem;
+background: var(--Accent-clr, #313DEB);
+text-align: center;
+font-family: Gellix;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 135%;
+}
+
+.jobcardBlur .jobOuterCard{
+  filter: blur(8px);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.scrollContent {
+  display: flex;
+  height: 3rem;
+  padding: 0.8rem 0.5rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 0.6rem 0.6rem 0 0;
+  background: #313DEB;
+}
+
+.scrollItems{
+  display: flex;
+  height: 1.5rem;
+  animation: scroll 8s linear infinite;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.scrollItem{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scrollItem svg{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.scrollText{
+  color: #FFF;
+  text-align: center;
+  font-family: Gellix;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Tablet styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .main {
+    width: 90%;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .jobCardsBefore {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .recommendsAlerts {
+    width: 100%;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .recommends,
+  .alerts {
+    flex: 1;
+  }
+
+  .careerOp {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+
+  .careerContHead {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .careerContMidCont {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .recommendsText,
+  .alertsText {
+    font-size: 1.3em;
+  }
+
+  .clickableMatter {
+    font-size: 1.1em;
+  }
+
+  .jobHead {
+    font-size: 1.1em;
+  }
+
+  .jobInput {
+    font-size: 1.1em;
+  }
+
+  .alertsBut,
+  .loginBut,
+  .signUpBut {
+    font-size: 1em;
+  }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .app {
+    overflow-x: hidden;
+  }
+
+  .gradientContainer {
+    padding: 0 2em;
+  }
+
+  .main {
+    width: 95%;
+    margin-bottom: 6em;
+  }
+
+  .jobCardsBefore {
+    height: 50vh;
+  }
+
+  .recommendsAlerts {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .recommends,
+  .alerts {
+    width: 100%;
+  }
+
+  .careerOp {
+    height: auto;
+    padding: 2.5em;
+    gap: 2em;
+  }
+
+  .careerContHead {
+    font-size: 1.8em;
+    line-height: 1.3;
+  }
+
+  .careerContMid {
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+  }
+
+  .careerContMidCont {
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+
+  .ellipseImage {
+    width: 12em;
+    height: auto;
+  }
+
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .buttons button {
+    width: 100%;
+    padding: 1em 1.5em;
+  }
+
+  .loginBut,
+  .signUpBut {
+    font-size: 1.4em;
+    height: auto;
+    min-height: 3em;
+  }
+
+  .recommendsText,
+  .alertsText {
+    font-size: 1.6em;
+    padding: 1em 1.5em;
+    height: auto;
+    min-height: 3em;
+  }
+
+  .recommendsContent,
+  .alertsContent {
+    padding: 1.5em;
+  }
+
+  .contentMatter {
+    width: 100%;
+  }
+
+  .clickableMatter {
+    font-size: 1.3em;
+    line-height: 1.4;
+    padding: 0.5em 0;
+  }
+
+  .jobInputs {
+    width: 100%;
+    height: auto;
+  }
+
+  .jobHead {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+  }
+
+  .jobInput {
+    font-size: 1.4em;
+    padding: 1em 1.2em;
+    height: auto;
+    min-height: 3em;
+  }
+
+  .alertsBut {
+    font-size: 1.4em;
+    padding: 1em 1.2em;
+    height: auto;
+    min-height: 3em;
+  }
+
+  .alertsForm {
+    width: 100%;
+    gap: 1.5em;
+  }
+
+  .scrollContent {
+    height: 3em;
+    padding: 1em 0.5em;
+  }
+
+  .scrollItems {
+    height: 1.5em;
+  }
+
+  .scrollItem svg {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+  .scrollText {
+    font-size: 1em;
+  }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media (max-width: 480px) {
+  .main {
+    width: 98%;
+  }
+
+  .gradientContainer {
+    padding: 0 1em;
+  }
+
+  .careerOp {
+    padding: 3em 1.5em;
+  }
+
+  .careerContHead {
+    font-size: 2.2em;
+  }
+
+  .careerContMidCont {
+    font-size: 1.6em;
+  }
+
+  .buttons button {
+    padding: 1.2em 1.8em;
+  }
+
+  .loginBut,
+  .signUpBut {
+    font-size: 1.6em;
+    min-height: 3.5em;
+  }
+
+  .recommendsText,
+  .alertsText {
+    font-size: 1.8em;
+    padding: 1.2em;
+  }
+
+  .clickableMatter {
+    font-size: 1.5em;
+  }
+
+  .jobHead {
+    font-size: 1.6em;
+  }
+
+  .jobInput,
+  .alertsBut {
+    font-size: 1.6em;
+    padding: 1.2em 1.8em;
+    min-height: 3.5em;
+  }
+
+  .ellipseImage {
+    width: 16em;
+  }
+
+  .scrollContent {
+    height: 4em;
+    padding: 1.2em 0.8em;
+  }
+
+  .scrollItems {
+    height: 2em;
+  }
+
+  .scrollItem svg {
+    height: 2em;
+    width: 2em;
+  }
+
+  .scrollText {
+    font-size: 1.2em;
+  }
+}

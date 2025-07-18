@@ -1,0 +1,209 @@
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.container {
+  background-color: rgba(249, 249, 249, 1);
+  padding: clamp(3rem, 5.2rem, 6rem) clamp(3rem, 6.4rem, 7rem);
+  width: 109%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: clamp(3rem, 5.2rem, 6rem);
+}
+
+.title {
+  font-size: clamp(2rem, 3.125rem, 4rem);
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0.825rem;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.25rem, 1.5rem);
+  font-weight: 400;
+  line-height: 1.33;
+  color: #000000;
+  max-width: 54.74rem;
+}
+
+.cardSection {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3.125rem;
+}
+
+.comparisonCard,
+.benefitsCard {
+  flex: 1;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(217, 217, 217, 1);
+  padding: 2.67rem 4.67rem 2.67rem 3.67rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparisonCard {
+  background-color: #ffffff;
+}
+
+.benefitsCard {
+  background-color: rgba(231, 241, 220, 1);
+}
+
+.cardTitle {
+  font-size: clamp(1.5rem, 1.875rem, 2.25rem);
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.cardSubtitle {
+  font-size: clamp(1.25rem, 1.458rem, 1.75rem);
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgba(84, 82, 81, 1);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.comparisonList,
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+.comparisonItemWrapper,
+.benefitsItemWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: start;
+}
+.comparisonItem,
+.benefitsItem {
+  display: flex;
+  gap: 0.825rem;
+  font-size: clamp(1rem, 1.25rem, 1.5rem);
+  font-weight: 500;
+  color: #000000;
+}
+
+.icon {
+  width: clamp(1.5rem, 2.083rem, 2.5rem);
+  height: clamp(1.5rem, 2.083rem, 2.5rem);
+  object-fit: contain;
+}
+
+.ctaSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.333rem;
+  flex-wrap: wrap;
+}
+
+.ctaTitle {
+  font-family: Gellix, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: clamp(1.5rem, 1.875rem, 2.25rem);
+  font-weight: 600;
+  color: #000000;
+}
+
+.ctaButton {
+  background-color: rgba(49, 61, 235, 1);
+  border: 1px solid rgba(49, 61, 235, 1);
+  border-radius: 0.825rem;
+  padding: 1.15rem 1.47rem;
+  font-size: clamp(1rem, 1.25rem, 1.5rem);
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: rgba(39, 49, 188, 1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    padding: 3rem;
+    width: 100%;
+  }
+
+  .cardSection {
+    gap: 1.5rem;
+  }
+
+  .comparisonCard,
+  .benefitsCard {
+    padding: 2rem;
+  }
+
+  .comparisonItem,
+  .benefitsItem {
+    transform: translate(2rem, 0);
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .container {
+    padding: 2rem;
+  }
+
+  .cardSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .subtitle {
+    max-width: 100%;
+  }
+
+  .comparisonItem,
+  .benefitsItem {
+    transform: translate(1rem, 0);
+  }
+
+  .ctaSection {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .container {
+    padding: 1.5rem;
+  }
+
+  .comparisonCard,
+  .benefitsCard {
+    padding: 1.5rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

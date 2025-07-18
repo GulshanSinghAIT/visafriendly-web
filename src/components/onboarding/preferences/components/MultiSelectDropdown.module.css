@@ -1,0 +1,85 @@
+.dropdownContainer {
+  position: relative;
+  width: 100%;
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-height: 48px;
+}
+
+.dropdownHeader:hover {
+  border-color: #9ca3af;
+}
+
+.dropdownText {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dropdownArrow {
+  font-size: 12px;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.arrowDown {
+  transform: rotate(0deg);
+}
+
+.dropdownOptions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 4px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.option:hover {
+  background-color: #f9fafb;
+}
+
+.option.selected {
+  background-color: #eff6ff;
+}
+
+.checkbox {
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+  accent-color: #3b82f6;
+}
+
+.optionLabel {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+} 

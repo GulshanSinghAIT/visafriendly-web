@@ -1,0 +1,36 @@
+.button {
+    border-radius: 0.75vw;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-wrap: nowrap;
+
+  }
+  
+  .default {
+    border: 0.0625vw solid var(--Components-Button-White-Border-Color, #e5e7eb);
+    background: var(--Components-Button-White-Bg-Color, #fff);
+    box-shadow: 0 0.0625vw 0.125vw 0 rgba(0, 0, 0, 0.05);
+    color: var(--Components-Button-White-Dark-Placeholder-Color, #1f2937);
+  }
+  
+  .danger {
+    background-color: rgba(239, 68, 68, 1);
+    color: var(--Components-Button-Solid-Red-Placeholder-Color, #fff);
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .button {
+      width: 100%;
+      white-space: initial;
+      font-size: 12px;
+      text-wrap: nowrap;
+    }
+  }

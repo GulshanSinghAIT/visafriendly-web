@@ -1,0 +1,202 @@
+:root {
+  --scale-factor: 1;
+  --base-unit: 1rem;
+}
+
+/* Base styles with scaling */
+.searchWrapper {
+  background: #fff;
+  border-right: 1px solid #e2e2e2;
+  align-self: stretch;
+  display: flex;
+  height: calc(4.8rem * var(--scale-factor));
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: calc(1rem * var(--scale-factor));
+  transition: all 0.3s ease;
+}
+
+.searchContent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: calc(1rem * var(--scale-factor));
+  transition: gap 0.3s ease;
+}
+
+.searchContent input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: calc(1.25rem * var(--scale-factor));
+  padding: calc(0.5rem * var(--scale-factor)) 0;
+  transition: all 0.3s ease;
+}
+
+.searchIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: calc(1.25rem * var(--scale-factor));
+  align-self: stretch;
+  margin: auto 0;
+  transition: width 0.3s ease;
+}
+
+.searchText {
+  align-self: stretch;
+  margin: auto 0;
+  color: #636363;
+  font-family: "Gellix";
+  font-size: calc(1.25rem * var(--scale-factor));
+  font-weight: 400;
+  line-height: calc(2rem * var(--scale-factor));
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  width: calc(2.2rem * var(--scale-factor));
+  height: calc(2.2rem * var(--scale-factor));
+  background-size: cover;
+  background-position: center;
+  transform: translate(calc(1.56rem * var(--scale-factor)), 0);
+  transition: all 0.3s ease;
+}
+
+.arrow img {
+  width: calc(0.7rem * var(--scale-factor));
+  height: calc(0.35rem * var(--scale-factor));
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.searchContainer {
+  align-items: center;
+  border-radius: calc(0.835rem * var(--scale-factor));
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 calc(0.2rem * var(--scale-factor)) calc(1.56rem * var(--scale-factor)) rgba(156, 156, 156, 0.25);
+  background-color: #fff;
+  display: flex;
+  margin-top: calc(1rem * var(--scale-factor));
+  width: min(90%, calc(56.25rem * var(--scale-factor)));
+  max-width: 100%;
+  overflow: hidden;
+  padding: calc(0.52rem * var(--scale-factor)) calc(1rem * var(--scale-factor));
+  transition: all 0.3s ease;
+}
+
+.searchButton {
+  border-radius: calc(0.42rem * var(--scale-factor));
+  background-color: #313deb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: calc(1.875rem * var(--scale-factor));
+  height: calc(1.875rem * var(--scale-factor));
+  margin: auto calc(0.835rem * var(--scale-factor));
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.searchButton:hover {
+  transform: scale(1.05);
+}
+
+.searchButtonIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: calc(1rem * var(--scale-factor));
+  transition: width 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .searchContainer {
+    flex-direction: column;
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 0.75rem;
+    gap: 0;
+  }
+
+  .searchWrapper {
+    border-right: none;
+    border-bottom: 1px solid #e2e2e2;
+    height: auto;
+    padding: 0.75rem;
+  }
+
+  .searchContent {
+    gap: 0.75rem;
+  }
+
+  .searchContent input {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .searchText {
+    font-size: 1rem;
+    color: #636363;
+  }
+
+  .searchIcon {
+    width: 1rem;
+  }
+
+  .arrow {
+    transform: none;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .searchButton {
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-family: "Gellix";
+    font-size: 1rem;
+  }
+
+  .searchButtonIcon {
+    width: 1rem;
+  }
+
+  /* Add text to search button on mobile */
+  .searchButton::after {
+    content: "Search";
+    color: #fff;
+    font-family: "Gellix";
+    font-size: 1rem;
+  }
+}
+
+/* Preserve larger screen styles */
+@media screen and (min-width: 1920px) {
+  :root { --scale-factor: 1.2; }
+  .searchContainer { max-width: calc(1400px * var(--scale-factor)); }
+}
+
+@media screen and (max-width: 1440px) {
+  :root { --scale-factor: 0.9; }
+}
+
+@media screen and (max-width: 1199px) {
+  :root { --scale-factor: 0.8; }
+}
+
+@media screen and (max-width: 991px) {
+  :root { --scale-factor: 0.7; }
+}
+
+/* Touch device optimization */
+@media (hover: none) and (pointer: coarse) {
+  .searchButton, .arrow {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

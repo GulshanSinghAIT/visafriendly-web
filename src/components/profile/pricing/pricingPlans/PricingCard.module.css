@@ -1,0 +1,185 @@
+.card {
+  align-self: stretch;
+  border-radius: 1.25rem;
+  border: 1px solid var(--Border, #d9d9d9);
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(121, 121, 121, 0.10), 0px 1px 1px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  min-width: clamp(18rem, 13.8rem, 15rem);
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 0%;
+  padding: clamp(1rem, 1.27rem, 1.5rem);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardHighlighted {
+  border: 2px solid var(--Accent-clr, #313DEB);
+}
+
+.title {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.price {
+  margin-top: clamp(0.5rem, 0.7rem, 0.875rem);
+  width: 100%;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+
+.priceSubtext {
+  font-weight: 500;
+  font-size: clamp(1.25rem, 1.46rem, 1.75rem);
+}
+
+.button {
+  align-self: stretch;
+  border-radius: 0.83rem;
+  margin-top: 1rem;
+  min-height: clamp(3rem, 3.54rem, 4rem);
+  width: 100%;
+  font-size: clamp(1rem, 1.15rem, 1.25rem);
+  font-weight: 500;
+  line-height: 1;
+  padding: clamp(1rem, 1.15rem, 1.25rem) 0;
+  border: 1px solid var(--Accent-clr, #313deb);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonPrimary {
+  composes: button;
+  background-color: var(--Accent-clr, #313deb);
+  color: #fff;
+}
+
+.buttonSecondary {
+  composes: button;
+  background-color: transparent;
+  color: var(--Accent-clr, #313deb);
+}
+
+.buttonCurrent {
+  composes: button;
+  background-color: rgba(217, 217, 217, 1);
+  border-color: rgba(217, 217, 217, 1);
+  color: rgba(0, 0, 0, 1);
+  cursor: default;
+}
+
+.features {
+  margin-top: clamp(1rem, 1.25rem, 1.5rem);
+}
+
+.featuresTitle {
+  color: rgba(0, 0, 0, 1);
+  font-size: clamp(1.125rem, 1.35rem, 1.5rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.featuresList {
+  margin-top: clamp(0.75rem, 0.83rem, 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 0.83rem, 1rem);
+}
+
+.badge {
+  position: absolute;
+  border-radius: 999px;
+  padding: clamp(0.5rem, 0.57rem, 0.625rem) clamp(0.45rem, 0.52rem, 0.6rem);
+  border: 1px solid var(--Accent-clr, #313deb);
+  color: var(--Accent-clr, #313deb);
+  font-size: clamp(0.5rem, 0.63rem, 0.75rem);
+  line-height: 1;
+  font-weight: 600;
+  transform: translate(clamp(0.3rem, 0.4rem, 0.5rem), clamp(0.15rem, 0.2rem, 0.25rem));
+}
+
+.recommendedBadge {
+  position: relative;
+  background-color: #313deb;
+  color: #fff;
+  font-size: clamp(0.625rem, 0.729rem, 0.875rem);
+  font-weight: 500;
+  padding: clamp(0.5rem, 0.6rem, 0.75rem);
+  width: clamp(7rem, 8.8rem, 10rem);
+  text-align: center;
+  right: clamp(-4rem, -3.854rem, -3.5rem);
+  top: clamp(2rem, 2.467rem, 3rem);
+  transform: translate(6.8rem, -2.5rem) rotate(46deg) !important;
+  clip-path: polygon(25% 0, 72% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+  margin-bottom: -2rem;
+}
+
+.recommendedBadgenew {
+  position: absolute;
+  background-color: #313deb;
+  color: #fff;
+  font-size: clamp(0.625rem, 0.729rem, 0.875rem);
+  font-weight: 500;
+  padding: clamp(0.5rem, 0.6rem, 0.75rem);
+  width: clamp(7rem, 8.8rem, 10rem);
+  text-align: center;
+  right: clamp(-4rem, -3.854rem, -3.5rem);
+  top: clamp(2rem, 2.467rem, 3rem);
+  transform: translate(clamp(-10rem, -9.2rem, -8rem), clamp(11rem, 12rem, 13rem)) rotate(47deg);
+  clip-path: polygon(25% 0, 72% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .card {
+    min-width: 100%;
+  }
+
+  .recommendedBadge,
+  .recommendedBadgenew {
+    width: 7rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Hover States */
+@media (hover: hover) {
+  .card:hover:not(.cardHighlighted) {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .buttonPrimary:hover {
+    background-color: #2632bc;
+  }
+
+  .buttonSecondary:hover {
+    background-color: rgba(49, 61, 235, 0.1);
+  }
+}
+
+/* Focus States */
+.button:focus-visible {
+  outline: 2px solid #313deb;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .button {
+    transition: none;
+  }
+}

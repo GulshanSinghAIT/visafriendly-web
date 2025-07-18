@@ -1,0 +1,34 @@
+.buttonWrapper {
+    display: flex;
+    min-width: 15vw;
+    width: 100%;
+    justify-content: start;
+    flex: 1;
+    flex-basis: 0%;
+  }
+  
+  .button {
+    align-self: stretch;
+    border-radius: 0.75vw;
+    border: 0.06vw solid var(--Components-Button-White-Border-Color, #e5e7eb);
+    background: var(--Components-Button-White-Bg-Color, #fff);
+    box-shadow: 0 0.06vw 0.125vw 0 rgba(0, 0, 0, 0.05);
+    min-width: 15vw;
+    width: 100%;
+    padding: 1.125vw var(--Components-Button-Spacing-X, 1vw);
+    gap: var(--Components-Button-Gap-Between, 0.625vw);
+    overflow: hidden;
+    height: 100%;
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 991px) {
+    .buttonWrapper {
+      max-width: 100%;
+    }
+    
+    .button {
+      max-width: 100%;
+    }
+  }

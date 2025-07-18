@@ -1,0 +1,29 @@
+.button {
+    border-radius: 0.75vw;
+    border: 0.05vw solid var(--Components-Button-White-Border-Color, #e5e7eb);
+    background: var(--Components-Button-White-Bg-Color, #fff);
+    box-shadow: 0 0.05vw 0.1vw 0 rgba(0, 0, 0, 0.05);
+    min-width: 12vw;
+    width: 100%;
+    padding: 0.9vw var(--Components-Button-Spacing-X, 0.8vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background: var(--Components-Button-White-Hover-Bg-Color, #f3f4f6);
+  }
+  
+  .button:focus {
+    outline: 0.1vw solid var(--Components-Button-White-Focus-Border-Color, #2563eb);
+    outline-offset: 0.1vw;
+  }
+  
+  .buttonContent {
+    color: var(--Components-Button-White-Dark-Placeholder-Color, #1f2937);
+    font: 500 1vw/1 Gellix, sans-serif;
+    text-align: center;
+  }

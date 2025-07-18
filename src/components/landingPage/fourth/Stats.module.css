@@ -1,0 +1,256 @@
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.statsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 5.2rem) clamp(1rem, 3vw, 4.4rem);
+  background: var(--Primary-background, #F9F9F9);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.statsHeader {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.mainTitle {
+  color: #000;
+  margin: 0;
+  text-align: center;
+  font-family: "Gellix";
+  font-size: clamp(2rem, 4vw, 3.125rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #000;
+  margin-top: clamp(1rem, 2vw, 1.25rem);
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Gellix";
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.45rem);
+  margin-top: clamp(3rem, 5vw, 5.2rem);
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1rem;
+}
+
+.topRow, .bottomRow {
+  display: flex;
+  gap: clamp(1rem, 2vw, 1.45rem);
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.bottomRow {
+  padding: 0;
+}
+
+.statCard {
+  border-radius: 0.625rem;
+  border: 1px solid #f2f1ec;
+  background-color: rgba(189, 208, 251, 0.3);
+  display: flex;
+  padding: clamp(1.5rem, 3vw, 2.3rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.53rem;
+  flex: 1 1 300px;
+  min-width: 280px;
+  height: auto;
+  min-height: 16rem;
+}
+
+.percentage {
+  color: #313DEB;
+  text-align: center;
+  font-family: "Gellix";
+  font-size: clamp(2.5rem, 4vw, 3.65rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.statTitle {
+  font-weight: 700;
+  margin-top: clamp(0.75rem, 1.5vw, 1.25rem);
+  color: #000;
+  text-align: center;
+  font-family: "Gellix";
+  font-size: clamp(1.25rem, 2vw, 1.67rem);
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.statDescription {
+  margin-top: clamp(0.75rem, 1.5vw, 1.25rem);
+  color: #000;
+  text-align: center;
+  font-family: "Gellix";
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  display: flex;
+  align-items: center;
+  gap: 0.52rem;
+  margin-top: clamp(3rem, 5vw, 5.2rem);
+  padding: clamp(0.75rem, 1.5vw, 0.885rem) clamp(1rem, 2vw, 1.4rem);
+  border-radius: 0.835rem;
+  background-color: rgba(49, 61, 235, 1);
+  border: 1px solid rgba(49, 61, 235, 1);
+  color: #fff;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(49, 61, 235, 0.2);
+}
+
+.buttonText {
+  margin: auto 0;
+}
+
+.buttonIcon {
+  width: clamp(1rem, 1.5vw, 1.25rem);
+  height: clamp(1rem, 1.5vw, 1.25rem);
+  object-fit: contain;
+}
+
+/* Tablet Media Queries */
+@media screen and (max-width: 1024px) {
+  .statsContainer {
+    padding: 0 2rem;
+  }
+  
+  .topRow, .bottomRow {
+    gap: 1.5rem;
+  }
+  
+  .statCard {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statsSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .statsContainer {
+    padding: 0 1rem;
+  }
+
+  .topRow, .bottomRow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .statCard {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}
+
+/* Mobile Media Queries */
+@media screen and (max-width: 480px) {
+  .statsSection {
+    padding: 2rem 1rem;
+  }
+
+  .statsContainer {
+    padding: 0;
+  }
+
+  .modalOverlay {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 1rem 0;
+  }
+
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 320px) {
+  .statsSection {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .statCard {
+    padding: 1.25rem;
+  }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .modalOverlay {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .statsSection {
+    padding: 2rem 1rem;
+  }
+
+  .statsContainer {
+    margin-top: 2rem;
+  }
+
+  .topRow, .bottomRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .statCard {
+    flex: 1 1 calc(50% - 1rem);
+    min-height: 12rem;
+  }
+
+  .ctaButton {
+    margin-top: 2rem;
+  }
+}

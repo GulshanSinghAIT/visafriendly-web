@@ -1,0 +1,537 @@
+
+.jobOuterCard{
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--Border, #D9D9D9);
+    background: var(--White, #FFF);
+    box-shadow: 0 1px 2px 0 rgba(121, 121, 121, 0.05);
+}
+
+.jobOuterCardBlur{
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--Border, #D9D9D9);
+    background: var(--White, #FFF);
+    box-shadow: 0 1px 2px 0 rgba(121, 121, 121, 0.05);
+    filter: blur(0.4rem);
+}
+
+.jobCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.jobApplyBookmark svg{
+    height: 2rem;
+    width: 2rem;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.jobDetails svg{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.jobCardCompany{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.jobCardCompanyLogo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.6rem;
+    background: url("/public/images/companyLogo.png") lightgray 50% / cover no-repeat;
+}
+
+.jobCardNameRole{
+    display: flex;
+    width: auto;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3rem;
+    align-self: stretch;
+}
+
+.jobCardRole{
+    white-space: nowrap;
+    color: var(--Primary-text-clr, #000);
+    text-align: center;
+    font-family: "Gellix";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.jobCardName{
+    color: var(--Secondary-text-clr, #545251);
+    text-align: center;
+    font-family: "Gellix";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.273%;
+}
+
+.jobApplyBookmark{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.jobApply{
+    display: flex;
+    padding: 1rem 1.5rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--Accent-clr, #313DEB);
+    background: var(--Accent-clr, #313DEB);
+    color: var(--Primary-background, #F9F9F9);
+    font-family: "Gellix";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.jobBookmark{
+    display: flex;
+    height: 3rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.horizontalLine{
+    width: 100%;
+    height: 1px;
+    background: var(--Border, #D9D9D9);
+}
+
+.jobDetails{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.jobSubDetail{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: auto;
+    flex: 1;
+}
+
+.jobDetailDesc{
+    color: var(--Secondary-text-clr, #545251);
+    text-align: center;
+    font-family: "Gellix";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.273%;
+}
+
+
+
+.jobCardFooter{
+    display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+}
+
+.jobCardFooterStart{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.jobCardFooterEnd{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.jobType{
+    display: flex;
+    padding: 0.3rem 0.6rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.4rem;
+    background: var(--Brand-bg-for-icons, rgba(49, 61, 235, 0.12));
+}
+
+.jobTypeText{
+    color: var(--Accent-clr, #313DEB);
+    text-align: center;
+    font-family: "Gellix";
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.444%;
+}
+
+.jobCardFooterEnd div{
+    color: var(--Secondary-text-clr, #545251);
+    text-align: center;
+    font-family: "Gellix";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.273%;
+}
+
+.jobCardFooterEnd svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.jobSubDetailFirst{
+    width: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.jobDetailDescFirst{
+    width: 100%;
+    color: var(--Secondary-text-clr, #545251);
+    font-family: "Gellix";
+    font-size: 1rem;
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    line-height: 127.273%;
+}
+
+.jobCard img{
+    cursor: pointer;
+}
+
+.jobCard button{
+    cursor: pointer;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .jobOuterCard,
+  .jobOuterCardBlur {
+    width: 100%;
+    padding: 1.5em;
+  }
+
+  .jobCardRole {
+    font-size: 1.4em;
+  }
+
+  .jobCardName {
+    font-size: 1em;
+  }
+
+  .jobCardCompanyLogo {
+    width: 4em;
+    height: 4em;
+  }
+
+  .jobCardNameRole {
+    width: auto;
+    flex: 1;
+  }
+
+  .jobApply {
+    font-size: 1em;
+    padding: 0.8em 1.2em;
+  }
+
+  .jobApplyBookmark svg {
+    height: 1.8em;
+    width: 1.8em;
+  }
+
+  .jobDetails svg {
+    height: 1.2em;
+    width: 1.2em;
+  }
+
+  .jobDetailDesc,
+  .jobDetailDescFirst {
+    font-size: 1em;
+  }
+
+  .jobTypeText {
+    font-size: 0.9em;
+  }
+
+  .jobCardFooterEnd div {
+    font-size: 1em;
+  }
+
+  .jobCardFooterEnd svg {
+    width: 1em;
+    height: 1em;
+  }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .jobOuterCard,
+  .jobOuterCardBlur {
+    width: 100%;
+    padding: 2.5em;
+    gap: 1.5em;
+  }
+
+  .jobCard {
+    gap: 2em;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+  }
+
+  .jobCardCompany {
+    width: 100%;
+    gap: 2em;
+  }
+
+  .jobCardCompanyLogo {
+    width: 6em;
+    height: 6em;
+  }
+
+  .jobCardNameRole {
+    width: auto;
+    flex: 1;
+    gap: 0.8em;
+  }
+
+  .jobCardRole {
+    font-size: 1.8em;
+    text-align: left;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .jobCardName {
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  .jobApplyBookmark {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 2em;
+  }
+
+  .jobApply {
+    font-size: 1.4em;
+    padding: 1.2em 2em;
+    border-radius: 1.5em;
+  }
+
+  .jobBookmark {
+    height: auto;
+    padding: 1.2em;
+  }
+
+  .jobApplyBookmark svg {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .jobDetails {
+    flex-direction: column;
+    gap: 1.5em;
+    width: 100%;
+  }
+
+  .jobSubDetail,
+  .jobSubDetailFirst {
+    width: 100%;
+    gap: 1.5em;
+  }
+
+  .jobDetails svg {
+    height: 1.8em;
+    width: 1.8em;
+  }
+
+  .jobDetailDesc,
+  .jobDetailDescFirst {
+    font-size: 1.3em;
+  }
+
+  .jobCardFooter {
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .jobCardFooterStart {
+    gap: 1.5em;
+    flex-wrap: wrap;
+  }
+
+  .jobType {
+    padding: 0.8em 1.5em;
+    border-radius: 1em;
+  }
+
+  .jobTypeText {
+    font-size: 1.1em;
+  }
+
+  .jobCardFooterEnd {
+    gap: 0.8em;
+  }
+
+  .jobCardFooterEnd div {
+    font-size: 1.3em;
+  }
+
+  .jobCardFooterEnd svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media (max-width: 480px) {
+  .jobOuterCard,
+  .jobOuterCardBlur {
+    padding: 3em;
+    gap: 2em;
+  }
+
+  .jobCard {
+    gap: 2.5em;
+  }
+
+  .cardHeader {
+    gap: 2.5em;
+  }
+
+  .jobCardCompany {
+    gap: 2.5em;
+  }
+
+  .jobCardCompanyLogo {
+    width: 7em;
+    height: 7em;
+  }
+
+  .jobCardRole {
+    font-size: 2em;
+  }
+
+  .jobCardName {
+    font-size: 1.5em;
+  }
+
+  .jobApplyBookmark {
+    gap: 2.5em;
+  }
+
+  .jobApply {
+    font-size: 1.6em;
+    padding: 1.5em 2.5em;
+  }
+
+  .jobBookmark {
+    padding: 1.5em;
+  }
+
+  .jobApplyBookmark svg {
+    height: 3em;
+    width: 3em;
+  }
+
+  .jobDetails {
+    gap: 2em;
+  }
+
+  .jobSubDetail,
+  .jobSubDetailFirst {
+    gap: 2em;
+  }
+
+  .jobDetails svg {
+    height: 2.2em;
+    width: 2.2em;
+  }
+
+  .jobDetailDesc,
+  .jobDetailDescFirst {
+    font-size: 1.5em;
+  }
+
+  .jobCardFooter {
+    gap: 2.5em;
+  }
+
+  .jobCardFooterStart {
+    gap: 2em;
+  }
+
+  .jobType {
+    padding: 1em 1.8em;
+    border-radius: 1.2em;
+  }
+
+  .jobTypeText {
+    font-size: 1.3em;
+  }
+
+  .jobCardFooterEnd div {
+    font-size: 1.5em;
+  }
+
+  .jobCardFooterEnd svg {
+    width: 1.8em;
+    height: 1.8em;
+  }
+}

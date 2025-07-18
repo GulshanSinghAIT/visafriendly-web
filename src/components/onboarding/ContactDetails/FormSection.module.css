@@ -1,0 +1,161 @@
+.formSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: clamp(2rem, 3rem, 4rem);
+}
+
+.sectionHeader {
+  margin-bottom: clamp(1rem, 1.25rem, 1.5rem);
+}
+
+.sectionTitle {
+  color: #000 !important;
+  font-size: clamp(1.25rem, 1.425rem, 1.75rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.required {
+  color: rgba(239, 68, 68, 1) !important;
+  margin-left: clamp(0.2rem, 0.25rem, 0.3rem);
+}
+
+.sectionDescription {
+  margin-top: clamp(0.625rem, 0.75rem, 1rem);
+  font-size: clamp(0.875rem, 1.1rem, 1.25rem);
+  color: #545251  !important;
+  line-height: 1.2;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.25rem, 1.5rem);
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .formSection {
+    margin-bottom: 2.5rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+
+  .sectionDescription {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .formSection {
+    margin-bottom: 2rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 0.875rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.125rem;
+  }
+
+  .sectionDescription {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .sectionContent {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .formSection {
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 0.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
+  }
+
+  .sectionDescription {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* High Contrast Mode */
+@media (forced-colors: active) {
+  .required {
+    forced-color-adjust: none;
+    color: CanvasText;
+  }
+
+  .sectionTitle {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .sectionTitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .sectionDescription {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .formSection {
+    margin-bottom: 1.5rem;
+    page-break-inside: avoid;
+  }
+
+  .sectionTitle {
+    color: #000;
+  }
+
+  .sectionDescription {
+    color: #333;
+  }
+}
+
+/* Focus States */
+.sectionTitle:focus-visible {
+  outline: 2px solid #313DEB;
+  outline-offset: 2px;
+}
+
+/* Animation for Required Indicator */
+.required {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect for required indicator */
+@media (hover: hover) {
+  .required:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .required {
+    transition: none;
+  }
+}

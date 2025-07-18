@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Gellix, sans-serif;
+  padding: clamp(2.5rem, 3.33rem, 4rem) clamp(6rem, 7.5rem, 9rem) clamp(18rem, 22.29rem, 25rem);
+  height: 90vh;
+}
+
+.content {
+  display: flex;
+  max-width: 100%;
+  width: clamp(70rem, 85rem, 95rem);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+  color: rgba(0, 0, 0, 1);
+  font-size: clamp(1.5rem, 1.67rem, 2rem);
+  font-weight: 600;
+  transform: translate(clamp(-40rem, -37rem, -35rem), 0);
+}
+
+.cardsContainer {
+  display: flex;
+  margin-top: clamp(1.25rem, 1.67rem, 2rem);
+  width: 100%;
+  align-items: start;
+  gap: clamp(1.5rem, 2.08rem, 2.5rem);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    padding: 2.5rem 5rem 18rem;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .title {
+    transform: translate(-25rem, 0);
+  }
+}
+
+@media screen and (max-width: 64rem) { /* 1024px */
+  .container {
+    padding: 2rem 3rem 15rem;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .title {
+    transform: translate(-20rem, 0);
+  }
+
+  .cardsContainer {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .container {
+    padding: 1.5rem 2rem 12rem;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .title {
+    transform: translate(-10rem, 0);
+    font-size: 1.5rem;
+  }
+
+  .cardsContainer {
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .container {
+    padding: 1rem 1rem 8rem;
+  }
+
+  .title {
+    transform: translate(-5rem, 0);
+    font-size: 1.25rem;
+  }
+
+  .cardsContainer {
+    gap: 0.875rem;
+  }
+}
+
+/* For better touch interaction */
+@media (hover: none) {
+  .container {
+    padding-bottom: clamp(12rem, 15rem, 18rem);
+  }
+}
+
+/* For high-resolution displays */
+@media screen and (min-width: 120rem) { /* 1920px */
+  .container {
+    padding: 4rem 9rem 25rem;
+  }
+
+  .content {
+    width: 75%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .container {
+    padding: 2rem;
+    height: auto;
+  }
+
+  .title {
+    transform: none;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .container {
+    scroll-behavior: auto;
+  }
+}

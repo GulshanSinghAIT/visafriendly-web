@@ -1,0 +1,105 @@
+.resumeItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem; /* 20px */
+  flex-wrap: nowrap;
+  outline: 1px solid #c3bcbc;
+  border-radius: 1px;
+  outline-offset: 0.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.resumeItem.pdfItem {
+  justify-content: space-between;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+  flex: 1;
+  padding: 0.3rem;
+}
+
+.fileIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 3.75rem; /* 60px */
+}
+
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fileName {
+  color: rgb(31, 41, 55);
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  letter-spacing: 0.00688rem; /* 0.11px */
+}
+
+.fileInfo {
+  color: rgb(99, 99, 99);
+  font-size: 1.0625rem; /* 17px */
+  font-weight: 500;
+  line-height: 1.25rem; /* 20px */
+  margin-top: 0.25rem; /* 4px */
+}
+
+.actionWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem; /* 10px */
+  justify-content: flex-end;
+}
+
+.defaultButton {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem; /* 8px */
+  border: 1px solid #313deb;
+  background-color: white;
+  color: #313deb;
+  cursor: pointer;
+}
+
+.makeDefaultButton {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.5rem 0.9375rem;
+  border-radius: 0.5rem; /* 8px */
+  border: 1px solid #2563EB;
+  background-color: white;
+  color: #2563EB;
+  cursor: pointer;
+}
+
+.defaultButton {
+  background-color: #313deb;
+  color: white;
+}
+
+.defaultButton:disabled {
+  cursor: not-allowed;
+}
+
+.actionIcon {
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+  cursor: pointer;
+  margin-left: 0.8rem;
+}
+
+.divider {
+  border-top: 1px solid rgb(200, 200, 200);
+  margin: 1rem 0; /* 16px */
+  width: 100%;
+}

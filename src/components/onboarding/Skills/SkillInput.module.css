@@ -1,0 +1,68 @@
+.inputContainer {
+  display: flex;
+  width: 73%;
+}
+
+.input {
+  flex: 1;
+  border-radius: 0.3rem;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 0.575rem 1rem;
+  font-size: 1.075rem;
+  color: #545251;
+}
+
+.input::placeholder {
+  font-size: 1.2rem;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.875rem 1rem;
+  margin-left: -3rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Media queries for better responsiveness */
+@media (max-width: 768px) {
+  .inputContainer {
+    width: 85%;
+  }
+
+  .input {
+    font-size: 1rem;
+  }
+
+  .input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inputContainer {
+    width: 95%;
+  }
+
+  .iconWrapper {
+    padding: 0.75rem 0.875rem;
+    margin-left: -2.5rem;
+  }
+}

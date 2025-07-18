@@ -1,0 +1,288 @@
+.statsContainer {
+  background-color: rgba(49, 61, 235, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.73vw 4.43vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contentWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerContent {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 1.25vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  text-align: left;
+}
+
+.headingWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: start;
+  
+}
+
+.resultText {
+  color: rgba(49, 61, 235, 1);
+  font-size: 1.25vw;
+  font-family: "Gellix";
+  line-height: 1;
+  text-align: center;
+  align-self: start;
+}
+
+.mainHeading {
+  font-size: 3.13vw;
+  font-weight: 600;
+  color: #FFF;
+  font-family: 'Gellix';
+  font-style: normal;
+  align-self: stretch;
+
+}
+
+.subHeading {
+  align-self: stretch;
+  font-weight: 400;
+  line-height: 2.0834vw;
+  margin-top: 1.67vw;
+  color: #FFF;
+  font-family: 'Gellix';
+  font-size: 1.15vw;
+  font-style: normal;
+}
+
+.statsGrid {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  justify-content: space-between;
+  transform: translate(10, 0);
+  flex-wrap: wrap;
+  width: 55%;
+  flex-direction: row;
+  margin: 5.21vw 0;
+}
+
+.divider {
+  min-height: 0.0520834vw;
+  margin-top: 3.34vw;
+  width: 100%;
+  border: 0.0520834vw solid rgba(199, 197, 197, 1);
+}
+
+.companiesHeading {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Gellix';
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.0834vw;
+  align-self: stretch;
+  margin-top: 3.34vw;
+  font-weight: 400;
+  font-size: 1.25vw/2;
+}
+
+.logos {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.logoGrid {
+  display: inline-flex;
+  margin-top: 3.34vw;
+  width: 120%;
+  align-items: center;
+  gap: 2.0834vw 3.646vw;
+  justify-content: space-between;
+  animation: 12s slide infinite linear;
+  padding-right: 3.646vw;
+}
+
+.companyLogo {
+  object-fit: contain;
+  align-self: stretch;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos:hover .logoGrid {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1024px) {
+  .logoGrid {
+    width: 130%;
+  }
+}
+
+/* Tablet Media Queries */
+@media screen and (max-width: 768px) {
+  .statsContainer {
+    padding: 8vw 5vw;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .textContent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .resultText {
+    font-size: 2.5vw;
+    align-self: center;
+  }
+
+  .mainHeading {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .subHeading {
+    font-size: 2.2vw;
+    line-height: 3.5vw;
+    text-align: center;
+    margin-top: 3vw;
+  }
+
+  .statsGrid {
+    position: relative;
+    width: 100%;
+    margin: 6vw 0 0 0;
+    justify-content: center;
+    gap: 4vw;
+  }
+
+  .divider {
+    margin-top: 5vw;
+    border-width: 0.1vw;
+  }
+
+  .companiesHeading {
+    font-size: 2.2vw;
+    line-height: 3.5vw;
+    margin-top: 5vw;
+  }
+
+  .logoGrid {
+    margin-top: 5vw;
+    width: 200%;
+    gap: 3vw 5vw;
+    animation-duration: 20s;
+  }
+
+  .companyLogo {
+    height: 5vw;
+  }
+}
+
+/* Mobile Media Queries */
+@media screen and (max-width: 480px) {
+  .statsContainer {
+    padding: 10vw 5vw;
+  }
+
+  .resultText {
+    font-size: 4vw;
+  }
+
+  .mainHeading {
+    font-size: 7vw;
+  }
+
+  .subHeading {
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-top: 5vw;
+  }
+
+
+
+
+  .divider {
+    margin-top: 8vw;
+    border-width: 0.2vw;
+  }
+
+  .companiesHeading {
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-top: 8vw;
+  }
+
+  .logoGrid {
+    margin-top: 6vw;
+    width: 200%;
+    gap: 5vw 8vw;
+    animation-duration: 25s;
+  }
+
+  .companyLogo {
+    height: 8vw;
+  }
+  
+  /* Fix font-size issue in companiesHeading */
+  .companiesHeading {
+    font-size: 4vw; /* Corrected from 1.25vw/2 which isn't valid CSS */
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media screen and (max-width: 320px) {
+  .mainHeading {
+    font-size: 8vw;
+  }
+
+  .subHeading {
+    font-size: 4.5vw;
+    line-height: 7vw;
+  }
+
+ 
+
+  .companyLogo {
+    height: 10vw;
+  }
+
+  .logoGrid {
+    width: 200%;
+    animation-duration: 30s;
+  }
+}

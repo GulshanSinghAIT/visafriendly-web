@@ -1,0 +1,129 @@
+/* Modern Settings Page Styles */
+.pageContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 2rem;
+  max-width:80em;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 37%;
+  position: sticky;
+  top: 2rem;
+  transform: translateY(0);
+}
+
+.mainContent {
+  width: 63%;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+  padding: 2.5rem;
+  margin-top: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.mainContent:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #6b7280;
+}
+
+.breadcrumbInactive {
+  color: #9ca3af;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbInactive:hover {
+  color: #6b7280;
+}
+
+.breadcrumbActive {
+  color: #374151;
+  font-weight: 600;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.pageDescription {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .pageContainer {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .mainContent {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .mainContent {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageContainer {
+    padding: 0.5rem;
+  }
+  
+  .mainContent {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+}
+

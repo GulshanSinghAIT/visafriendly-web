@@ -1,0 +1,177 @@
+body {
+    font-family: 'Gellix', sans-serif;
+  }
+  
+  .missionVisionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0vw;
+  }
+  
+  .topSection {
+    display: flex;
+padding: 3.90625vw 4.4270834vw;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 3.229167vw;
+align-self: stretch;
+  }
+  
+  .teamImage {
+    width: 50%;
+    height: 32.2395834vw;
+    border-radius: 1.04167vw;
+  }
+  
+  .textSection {
+    display: flex;
+width: 88.54167vw;
+align-items: flex-start;
+gap: 1.875vw;
+  }
+  
+  .textCard {
+
+    display: flex;
+padding: 2.0834vw;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.25vw;
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 1.04167vw;
+background: var(--White, #FFF);
+
+/* small */
+box-shadow: 0vw 0.0520834vw 0.104167vw 0vw rgba(121, 121, 121, 0.05);
+  }
+
+  .textCard svg{
+    height: 2.8645834vw;
+    width: 2.8645834vw;
+  }
+  
+  .cardTitle {
+    color: var(--Primary-text-clr, #000);
+
+/* Web app/card title */
+font-family: Gellix;
+font-size: 1.875vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+align-self: stretch;
+  }
+
+  .textCardText{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.625vw;
+align-self: stretch;
+  }
+  
+  .cardDescription {
+    color: var(--Secondary-text-clr, #545251);
+font-family: Gellix;
+font-size: 1.25vw;
+font-style: normal;
+font-weight: 400;
+line-height: 145.833% ;
+align-self: stretch;
+  }
+  
+  .bottomSection {
+    display: flex;
+padding: 2.604167vw 4.4270834vw;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 3.229167vw;
+align-self: stretch;
+background: #FAFAFA;
+  }
+
+  .why{
+    display: flex;
+width: 37.29167vw;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.25vw;
+align-self: stretch;
+color: #000;
+font-family: Gellix;
+font-size: 3.125vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+  }
+
+  .infoCards{
+    display: flex;
+align-items: center;
+gap: 2.0834vw;
+align-self: stretch;
+  }
+  
+  .infoCard {
+    display: flex;
+padding: 2.29167vw;
+flex-direction: column;
+align-items: center;
+gap: 0.834vw;
+flex: 1 0 0;
+border-radius: 0.625vw;
+background: rgba(189, 208, 251, 0.30);
+  }
+
+  .infoCard h3{
+    font-weight: bold;
+    font-size: 1.67vw;
+  }
+
+  .infoCard img{
+    height: 3.90625vw;
+    width: 3.90625vw;
+  }
+
+  .iconMis{
+    border-radius: 100px;
+  }
+  
+  .iconMission {
+
+    display: flex;
+width: 3.90625vw;
+height: 3.90625vw;
+padding: 0.46875vw;
+justify-content: center;
+align-items: center;
+gap: 0.390625vw;
+border-radius: 3.90625vw;
+background: var(--Accent-clr, #313DEB);
+  }
+
+  .iconMission svg{
+    height: 2.34375vw;
+    width: 1.8229167vw;
+  }
+  
+  .infoTitle {
+    font-size: 1.67vw;
+    font-weight: 700;
+    line-height: 1.5625vw;
+    color: #000;
+  }
+  
+  .infoDescription {
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 1.25vw;
+    color: #000;
+    text-align: center;
+    margin: 0vw;
+  }
+  

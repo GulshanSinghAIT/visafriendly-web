@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2.6rem 3.65rem 1.56rem 3.65rem;
+}
+
+.heading {
+  width: 53rem;
+  max-width: 100%;
+  font-size: 2.6rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+}
+
+.blogList {
+  margin-top: 2.6rem;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .blogList {
+    margin-top: 2rem;
+  }
+}
+
+/* Additional media query for better responsiveness */
+@media (max-width: 768px) {
+  .container {
+    margin: 2rem 1.5rem 1rem;
+  }
+
+  .heading {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+
+  .blogList {
+    margin-top: 1.5rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .container {
+    margin: 1.5rem 1rem 0.75rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .blogList {
+    margin-top: 1.25rem;
+  }
+}

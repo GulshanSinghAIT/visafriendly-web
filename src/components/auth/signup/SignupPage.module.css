@@ -1,0 +1,28 @@
+.container {
+  background-color: rgba(250, 249, 249, 1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 32px;
+  overflow: hidden;
+  height: 650px;
+}
+
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}

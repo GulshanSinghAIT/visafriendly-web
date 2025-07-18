@@ -1,0 +1,74 @@
+.avatarWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto 0;
+}
+
+.avatarContainer {
+  border-radius: 999rem; /* or simply 50% */
+  background-color: rgba(49, 61, 235, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(2.5rem, 3.5rem, 4.5rem); /* Add default size */
+  height: clamp(2.5rem, 3.5rem, 4.5rem); /* Add default size */
+  overflow: hidden; /* Ensure content stays within border-radius */
+  transition: all 0.2s ease; /* Smooth transitions */
+}
+
+.avatarImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 60%;
+  margin: auto 0;
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .avatarContainer {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .avatarContainer {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .avatarContainer {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* For high-resolution displays */
+@media screen and (min-width: 120rem) { /* 1920px */
+  .avatarContainer {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .avatarContainer {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+}
+
+/* Optional: Add hover effect */
+@media (hover: hover) {
+  .avatarContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(49, 61, 235, 0.2);
+  }
+}

@@ -1,0 +1,42 @@
+.header {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 2.08vw 5.21vw;
+    font-family: Gellix, sans-serif;
+    color: #000000;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.57vw 4.43vw;
+  }
+  
+  .brand {
+    display: flex;
+    min-width: 12.5vw;
+    align-items: center;
+    gap: 0.365vw;
+    font-size: 1.875vw;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  .logo {
+    width: 2.708vw;
+    height: 2.708vw;
+    border-radius: 0.573vw;
+    object-fit: contain;
+  }
+  
+  .brandName {
+    margin: auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 0 1.042vw;
+    }
+    
+    .brand {
+      white-space: initial;
+    }
+  }

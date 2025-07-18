@@ -1,0 +1,149 @@
+.groupContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 1rem, 1.25rem);
+  margin-top: clamp(1rem, 1.25rem, 1.5rem);
+}
+
+.checkbox {
+  border-radius: 999px;
+  background-color: rgba(243, 244, 246, 1);
+  display: flex;
+  align-items: center;
+  padding: clamp(0.375rem, 0.435rem, 0.5rem) clamp(0.625rem, 0.8rem, 1rem);
+  gap: clamp(0.375rem, 0.5rem, 0.625rem);
+  border: 1px solid rgba(217, 217, 217, 1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkboxInput {
+  width: clamp(0.875rem, 0.95rem, 1.125rem);
+  height: clamp(0.875rem, 0.95rem, 1.125rem);
+  border: 1px solid rgba(107, 114, 128, 1);
+  border-radius: 50%;
+  background-color: #fff;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.checkboxInput:checked {
+  background-color: rgba(49, 61, 235, 1);
+  border-color: rgba(49, 61, 235, 1);
+}
+
+/* Custom checkmark */
+.checkboxInput:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.checkboxLabel {
+  color: var(--Components-Badge-Soft-Dark-Placeholder-Color, #1f2937);
+  font-size: clamp(0.875rem, 1.05rem, 1.25rem);
+  font-weight: 500;
+  font-family: Gellix, sans-serif;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .checkbox {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .checkboxInput {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .groupContainer {
+    gap: 0.75rem;
+  }
+
+  .checkbox {
+    padding: 0.875rem 1rem;
+  }
+
+  .checkboxInput {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .checkboxLabel {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .groupContainer {
+    gap: 0.5rem;
+  }
+
+  .checkbox {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .checkboxLabel {
+    font-size: 0.875rem;
+  }
+}
+
+/* Hover States */
+@media (hover: hover) {
+  .checkbox:hover {
+    background-color: rgba(243, 244, 246, 0.8);
+  }
+
+  .checkboxInput:hover {
+    border-color: rgba(49, 61, 235, 0.8);
+  }
+}
+
+/* Focus States */
+.checkbox:focus-within {
+  outline: 2px solid rgba(49, 61, 235, 0.5);
+  outline-offset: 2px;
+}
+
+/* Touch Devices */
+@media (hover: none) {
+  .checkbox {
+    padding: 0.75rem 1rem;
+  }
+
+  .checkboxInput {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+/* High Contrast Mode */
+@media (forced-colors: active) {
+  .checkboxInput {
+    border: 2px solid currentColor;
+  }
+
+  .checkboxInput:checked {
+    background-color: highlight;
+    border-color: highlight;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .checkbox,
+  .checkboxInput {
+    transition: none;
+  }
+}

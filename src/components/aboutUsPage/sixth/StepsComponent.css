@@ -1,0 +1,79 @@
+body {
+    font-family: 'Gellix', sans-serif;
+  }
+  
+  .steps-container {
+    display: flex;
+height: 35.6770834vw;
+padding: 5.20834vw 4.4270834vw;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 3.229167vw;
+align-self: stretch;
+background: #FAFAFA;
+  }
+
+  .header-section{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.834vw;
+align-self: stretch;
+  }
+  
+
+  
+  .main-title {
+    font-size: 3.125vw;
+    font-weight: 600;
+    line-height: 3.645834vw;
+    color: #000;
+  }
+  
+  .sub-title {
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 2.0834vw;
+    color: #000;
+  }
+  
+  .stepsSection {
+    display: flex;
+align-items: flex-end;
+gap: 2.0834vw;
+align-self: stretch;
+  }
+  
+  .step-card {
+    display: flex;
+padding: 1.25vw;
+flex-direction: column;
+align-items: center;
+gap: 1.25vw;
+flex: 1 0 0;
+border-radius: 1.25vw;
+background: var(--White, #FFF);
+box-shadow: 0vw 0.4167vw 0vw 0vw #313DEB, 0vw 0.20834vw 0.3645834vw 0vw rgba(0, 0, 0, 0.05);
+  }
+  
+  .step-icon {
+    width: 3.645834vw;
+    height: 3.645834vw;
+    background-color: #f9f9f9;
+  }
+  
+  .step-title {
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.624479167vw;
+    color: #000;
+  }
+  
+  .step-info {
+    font-size: 1.875vw;
+    font-weight: 600;
+    line-height: 2.249479167vw;
+    color: #313deb;
+  }
+  

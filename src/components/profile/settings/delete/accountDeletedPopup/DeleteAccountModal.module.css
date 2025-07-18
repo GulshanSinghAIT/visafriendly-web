@@ -1,0 +1,66 @@
+.deleteModal {
+    justify-content: center;
+    border-radius: 1vw;
+    background: var(--Overlays-Modal-Bg-Color, #fff);
+    box-shadow: 0 1.25vw 0.813vw 0 rgba(0, 0, 0, 0.03),
+      0 0.5vw 0.313vw 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: flex;
+    width: 35.875vw;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 2vw;
+    transform: translate(1vw, 5vw);
+  }
+  
+  .content {
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Overlays-Modal-Title-Color, #1f2937);
+    text-align: center;
+    justify-content: start;
+    font: 600 1.8vw Gellix, sans-serif;
+  }
+  
+  .confirmationIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 6.05vw;
+    max-width: 100%;
+  }
+  
+  .title {
+    margin-top: 1vw;
+    font-size: 2.05vw;
+  }
+  
+  .buttonGroup {
+    z-index: 0;
+    display: flex;
+    margin-top: 2vw;
+    width: 100%;
+    align-items: start;
+    gap: 1.5vw;
+    color: var(--Components-Button-White-Dark-Placeholder-Color, #1f2937);
+    text-align: center;
+    justify-content: end;
+    font: 500 1.1vw/1 Gellix, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .deleteModal {
+      padding: 0 1.25vw;
+    }
+    
+    .content {
+      max-width: 100%;
+    }
+    
+    .buttonGroup {
+      max-width: 100%;
+    }
+  }

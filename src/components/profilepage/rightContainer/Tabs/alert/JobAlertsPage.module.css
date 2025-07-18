@@ -1,0 +1,73 @@
+.mainContainer {
+    border-radius: 0.625rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.4rem, 0.521rem, 0.6rem);
+    padding:1.3em;
+  
+  
+}
+
+.contentWrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 2rem, 2.5rem);
+}
+
+
+
+.deleteAllButton {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 0.625rem, 0.75rem);
+  background: none;
+  border: none;
+  color: rgba(221, 32, 37, 1);
+  font-size: clamp(1rem, 1.2375rem, 1.4rem);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.deleteAllButton:hover {
+  opacity: 0.8;
+}
+
+.deleteIcon {
+  width: clamp(1.25rem, 1.6021rem, 1.75rem);
+  height: clamp(1.25rem, 1.6021rem, 1.75rem);
+  object-fit: contain;
+}
+
+
+
+.alertsList {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+  gap: clamp(1.25rem, 1.6667rem, 2rem);
+  flex-direction: column;
+  margin: 20px auto ;
+
+}
+
+.createAlertButton {
+  display: flex;
+  color: #313DEB;
+  font-size: clamp(1rem, 1.1938rem, 1.3rem);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-top: clamp(1rem, 1.5rem, 2rem);
+  transition: all 0.2s ease;
+}
+
+.plus {
+  width: clamp(1.25rem, 1.4rem, 1.6rem);
+  height: clamp(1.25rem, 1.4rem, 1.6rem);
+  margin-right: clamp(0.5rem, 0.6rem, 0.75rem);
+  margin-top: clamp(0.15rem, 0.2rem, 0.25rem);
+}
+

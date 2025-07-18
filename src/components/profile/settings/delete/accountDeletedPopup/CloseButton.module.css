@@ -1,0 +1,36 @@
+.buttonIcons {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    min-height: 3.7vw;
+    width: 3.7vw;
+    align-items: center;
+    justify-content: center;
+    right: 0.625vw;
+    top: 0.625vw;
+    height: 3.7vw;
+  }
+  
+  .buttonIconSmall {
+    border-radius: 0.5vw;
+    align-self: stretch;
+    display: flex;
+    min-height: 2.375vw;
+    width: 2.375vw;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 1.94vw;
+    align-self: stretch;
+    margin: auto 0;
+  }

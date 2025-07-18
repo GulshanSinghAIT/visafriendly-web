@@ -1,0 +1,85 @@
+.jobPicksSection {
+  background-color: rgba(208, 220, 255, 1);
+  border-radius: 0.625rem;
+  padding: clamp(0.875rem, 1.042rem, 1.25rem) clamp(1.25rem, 1.51rem, 1.75rem);
+}
+
+.jobPicksContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.jobPicksInfo {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+  flex-wrap: wrap;
+}
+
+.jobPicksIcon {
+  width: clamp(3rem, 3.725rem, 4.5rem);
+  height: clamp(3rem, 3.725rem, 4.5rem);
+  object-fit: contain;
+}
+
+.jobPicksTitle {
+  color: rgba(31, 41, 55, 1);
+  font-size: clamp(1rem, 1.19rem, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.057rem;
+  margin-bottom: clamp(0.15rem, 0.208rem, 0.25rem);
+}
+
+.jobPicksDescription {
+  color: rgba(84, 82, 81, 1);
+  font-size: clamp(0.875rem, 1.005rem, 1.125rem);
+  line-height: 1.4;
+}
+
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: clamp(2rem, 2.483rem, 3rem);
+  height: clamp(1.25rem, 1.55rem, 1.75rem);
+  cursor: pointer;
+}
+
+.toggleInput {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switchTrack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #313DEB;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.switchThumb {
+  position: absolute;
+  height: clamp(1rem, 1.246rem, 1.5rem);
+  width: clamp(1rem, 1.246rem, 1.5rem);
+  left: 0.044rem;
+  bottom: 0.152rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggleInput:checked + .switchTrack .switchThumb {
+  transform: translateX(clamp(0.875rem, 1.146rem, 1.25rem));
+}
+
+.toggleInput:not(:checked) + .switchTrack {
+  background-color: rgb(236, 236, 236);
+}
+

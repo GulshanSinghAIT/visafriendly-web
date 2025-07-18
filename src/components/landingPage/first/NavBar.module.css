@@ -1,0 +1,201 @@
+:root {
+  --scale-factor: 1;
+  --nav-padding: calc(1.6rem * var(--scale-factor));
+}
+
+/* Base styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(1.6rem * var(--scale-factor)) calc(4.2rem * var(--scale-factor));
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: calc(0.35rem * var(--scale-factor));
+  color: #000;
+  font-family: "Gellix";
+  font-size: calc(1.975rem * var(--scale-factor));
+  font-weight: 700;
+  transition: font-size 0.3s ease;
+}
+
+.logoImage {
+  width: calc(2.6rem * var(--scale-factor));
+  border-radius: calc(0.575rem * var(--scale-factor));
+  aspect-ratio: 1;
+  object-fit: contain;
+  transition: width 0.3s ease;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: calc(2.4rem * var(--scale-factor));
+  color: rgba(0, 0, 0, 1);
+  line-height: 2;
+  transition: gap 0.3s ease;
+}
+
+.navLink {
+  color: #000;
+  text-align: center;
+  font-family: "Gellix";
+  font-size: calc(1.25rem * var(--scale-factor));
+  font-weight: 500;
+  line-height: calc(2rem * var(--scale-factor));
+  white-space: nowrap;
+  transition: font-size 0.3s ease;
+}
+
+.activeLink {
+  color: #313DEB;
+}
+
+.authButtons {
+  display: flex;
+  align-items: center;
+  gap: calc(0.9375rem * var(--scale-factor));
+  transition: gap 0.3s ease;
+}
+
+.signInButton,
+.signUpButton {
+  padding: calc(0.875rem * var(--scale-factor)) calc(2rem * var(--scale-factor));
+  border-radius: calc(0.635rem * var(--scale-factor));
+  font: inherit;
+  cursor: pointer;
+  font-size: calc(1.075rem * var(--scale-factor));
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.signInButton {
+  color: #313DEB;
+  font-family: "Gellix";
+  border: 1px solid rgba(49, 61, 235, 1);
+  background: transparent;
+}
+
+.signUpButton {
+  color: #FFF;
+  font-family: Gellix;
+  background-color: rgba(49, 61, 235, 1);
+  border: 1px solid rgba(49, 61, 235, 1);
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Mobile Menu Styles */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.mobileMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.mobileNavLink {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Gellix";
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .navLinks,
+  .authButtons {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .logoImage {
+    width: 2rem;
+  }
+
+  /* Mobile Menu Show/Hide */
+  .mobileMenu.active {
+    display: block;
+  }
+
+  .signInButton {
+    display: none;
+  }
+
+  /* Show My Account button on mobile */
+  .signUpButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Preserve larger screen styles */
+@media screen and (min-width: 1920px) {
+  :root { --scale-factor: 1.2; }
+  .navbar {
+    max-width: calc(1800px * var(--scale-factor));
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  :root { --scale-factor: 0.9; }
+}
+
+@media screen and (max-width: 1199px) {
+  :root { --scale-factor: 0.8; }
+}
+
+@media screen and (max-width: 991px) {
+  :root { --scale-factor: 0.7; }
+}

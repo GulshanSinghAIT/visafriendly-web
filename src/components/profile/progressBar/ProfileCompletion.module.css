@@ -1,0 +1,141 @@
+.container {
+  background-color: rgba(255, 255, 255, 1);
+  border-right: 1px solid rgba(217, 217, 217, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.5rem, 2rem, 2rem);
+  width: 80%;
+  transform: translate(clamp(8rem, 10.1rem, 12rem), clamp(3rem, 4.7rem, 6rem));
+}
+
+.contentWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: clamp(1.5rem, 2rem, 2.5rem) clamp(4rem, 5.2rem, 6rem);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profileSection {
+  align-self: stretch;
+  display: flex;
+  min-width: clamp(10rem, 12.5rem, 15rem);
+  align-items: center;
+  gap: clamp(1rem, 1.25rem, 1.5rem);
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.textContent {
+  align-self: stretch;
+  display: flex;
+  min-width: clamp(10rem, 12.5rem, 15rem);
+  flex-direction: column;
+  font-family: Gellix, sans-serif;
+  justify-content: flex-start;
+  width: clamp(30rem, 39rem, 45rem);
+  margin: auto 0;
+}
+
+.title {
+  color: var(--Primary-text-clr, #000);
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1;
+  text-align: left;
+}
+
+.description {
+  width: 100%;
+  gap: clamp(1.25rem, 1.45rem, 1.75rem);
+  font-size: clamp(1rem, 1.15rem, 1.15rem);
+  color: var(--Secondary-text-clr, #545251);
+  font-weight: 400;
+  line-height: 2;
+  margin: 0;
+}
+
+.progressImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(3rem, 4.2rem, 5rem);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    width: 90%;
+    padding: 2rem;
+    transform: translate(5rem, 3rem);
+  }
+  .textContent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .container {
+    width: 95%;
+    padding: 1.5rem;
+    transform: translate(2rem, 2rem);
+  }
+
+  .contentWrapper {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .profileSection {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title {
+    transform: translate(-4rem, 0);
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .progressImage {
+    width: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .container {
+    width: 100%;
+    padding: 1rem;
+    transform: translate(0, 1rem);
+  }
+
+  .title {
+    transform: none;
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .progressImage {
+    width: 3rem;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .container {
+    padding: 1.5rem;
+  }
+}

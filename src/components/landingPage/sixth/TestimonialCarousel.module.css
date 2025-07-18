@@ -1,0 +1,115 @@
+.carouselContainer {
+  position: relative;
+  width: 100%; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.carouselWrapper {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out; /* Smooth movement */
+  position: relative;
+  justify-content: center;
+  gap: 10.4167vw;
+}
+
+.carouselWrapper::before {
+  position: absolute;
+  left: 0;
+  top:0;
+  height:100%;
+  width:20%;
+  z-index: 2;
+  content: "";
+  background: linear-gradient(to left, rgba(243, 241, 241, 0), white);
+}
+
+.carouselWrapper::after {
+  position: absolute;
+  right: 0;
+  top:0;
+  height:100%;
+  width:20%;
+  z-index: 2;
+  content: "";
+  background: linear-gradient(to right, rgba(243, 241, 241, 0), white);
+}
+
+.carouselSlideMid {
+  flex: 0 0 33%;
+  opacity: 1;
+  flex-shrink: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transform: scale(1.4);
+  margin-top: 5.20834vw;
+  border-radius: 0.625vw;
+border: 0.0520834vw solid var(--Secondary-accent, #F2F1EC);
+background: #FAFAFA;
+box-shadow: 0px 0.20834vw 1.5625vw 0px rgba(156, 156, 156, 0.25);
+  position: relative;
+  right: auto;
+  
+}
+
+.carouselSlideLeft {
+  flex: 0 0 30%; /* Display 3 slides at a time */
+  opacity: 1;
+  flex-shrink: 0;
+  margin-top: 3.645834vw;
+  overflow-x: auto;
+  margin-bottom: 3.645834vw;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.carouselSlideRight {
+  flex: 0 0 30%; /* Display 3 slides at a time */
+  opacity: 1;
+  flex-shrink: 0;
+  margin-top: 3.645834vw;
+  overflow-x: auto;
+  margin-bottom: 3.645834vw;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.carouselControls {
+  display: flex;
+  justify-content: center;
+  gap: 1.04167vw;
+  position: absolute;
+  top: 30%;
+  left: -1.3020834vw;
+}
+
+.carouselControlsi {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1.04167vw;
+  position: absolute;
+  top: 30%;
+  right: -1.25vw;
+}
+
+
+
+.carouselButton {
+  width: 2.604167vw;
+  height: 2.604167vw;
+  border-radius: 50%;
+  color: #313deb;
+  font-size: 1.25vw;
+  font-family: "Gellix";
+  border:0.0520834vw solid #313deb;
+  cursor: pointer;
+  background: #fff;
+}
+
+.carouselButton:active{
+  background: #313deb;
+  color: #fff;
+}
+.nextButton {
+  transform: rotate(0);
+}
+

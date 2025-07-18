@@ -1,0 +1,357 @@
+.profileContainer {
+  width: clamp(30rem, 49.335rem, 60rem);
+  margin: 0 auto;
+  padding: 1.5rem;
+  transform: translate(clamp(12rem, 16.375rem, 20rem), clamp(-30rem, -27.425rem, -20rem));
+  max-height: auto;
+  min-width: auto;
+}
+
+.content {
+  background-color: #FFFFFF;
+  border-radius: 0.9rem;
+  padding: clamp(1.5rem, 2.05rem, 2.5rem);
+  margin-top: 1.3rem;
+  border: 1px solid #D9D9D9;
+  max-height: auto;
+}
+
+.section {
+  margin-bottom: clamp(2.5rem, 3.9rem, 4.5rem);
+}
+
+.sectionTitle {
+  color: #1F2937;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.525rem, 1.75rem);
+  margin: 0;
+}
+
+.sectionTitle1 {
+  color: #1F2937;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.525rem, 1.75rem);
+  margin: 0;
+  text-align: left;
+}
+
+.sectionDescription {
+  color: #636363;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.225rem, 1.4rem);
+  margin: 0 0 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.875rem, 1.1rem, 1.25rem);
+}
+
+.nameFields,
+.roleFields {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nameFields > *,
+.roleFields > * {
+  flex: 1;
+  min-width: clamp(15rem, 18rem, 20rem);
+}
+
+.nameFields input {
+  border: 1px solid #E5E7EB !important;
+  border-radius: 0.4rem !important;
+  padding: 0.675rem 1.05rem !important;
+  font-weight: 520 !important;
+  font-size: clamp(0.875rem, 1.05rem, 1.25rem) !important;
+  color: #6B7280 !important;
+  background-color: #FFFFFF !important;
+  width: 100% !important;
+  appearance: none !important;
+  background-repeat: no-repeat !important;
+  background-position: right 1.2rem center !important;
+  padding-right: 3rem !important;
+}
+
+.InputField::placeholder {
+  color: #6B7280;
+  font-weight: 600;
+}
+
+.roleFieldInput {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: clamp(9rem, 11.25rem, 13rem);
+}
+
+.additionalRoles {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.833rem center;
+  padding-right: 2.083rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.417rem;
+  padding: 0.675rem 0.729rem;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 1.1375rem, 1.25rem);
+  color: #6B7280;
+  background-color: #FFFFFF;
+  width: 55%;
+  margin-top: -1.25rem;
+}
+
+
+
+.label {
+  color: #1F2937;    
+  font-weight: 500;
+  font-size: clamp(1rem, 1.1375rem, 1.25rem);
+  letter-spacing: 0.006rem;
+}
+
+.rolesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.selectedRoles {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: -2.188rem;
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillsForm {
+  display: flex;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 0.625rem;
+}
+
+.skillFields {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: clamp(20rem, 30.25rem, 35rem) !important;
+}
+
+.badgeContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.addButton {
+  background-color: #313DEB;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.7rem;
+  font-weight: 510;
+  font-size: clamp(0.875rem, 1.125rem, 1.25rem);
+  cursor: pointer;
+  width: clamp(15rem, 20.25rem, 25rem);
+  transition: background-color 0.2s;
+  transform: translate(0, 2rem);
+}
+
+.addButton:hover {
+  background-color: #2631BC;
+}
+
+.showMore {
+  transform: translate(0.05rem, 0.75rem);
+  margin-bottom: -1.8rem;
+}
+
+.addLink {
+  color: #313DEB;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.25rem, 1.5rem);
+  cursor: pointer;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #B4B4B8;
+  margin: 1.7rem 0;
+}
+
+.dividerLast {
+  width: clamp(30rem, 46.3rem, 50rem);
+  transform: translate(-2.08rem, -3rem);
+}
+
+.cancelButton,
+.saveButton {
+  padding: 0.1rem 1rem;
+  font-size: clamp(0.875rem, 1rem, 1.125rem);
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  height: 2.8rem;
+  margin-top: -1.8rem;
+  margin-right: 2rem;
+  margin-bottom: -2rem;
+  transform: translate(clamp(20rem, 27rem, 30rem), -1rem);
+}
+
+.cancelButton {
+  border: 1px solid var(--Components-Button-White-Border-Color, #E5E7EB);
+  background: var(--Components-Button-White-Bg-Color, #FFF);
+  font-weight: 500;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #1F2937;
+  transform: translate(clamp(20rem, 28rem, 30rem), -1rem);
+}
+
+.saveButton {
+  border-radius: var(--Components-Button-Border-Radius, 8px);
+  background: var(--Accent-clr, #313DEB);
+  color: #FFF;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .skillFields {
+    width: clamp(18rem, 25rem, 30rem) !important;
+  }
+
+  .cancelButton,
+  .saveButton {
+    transform: translate(clamp(15rem, 20rem, 25rem), -1rem);
+  }
+  .profileContainer {
+    max-width: 90%;
+    transform: translate(clamp(8rem, 12rem, 15rem), clamp(-25rem, -20rem, -15rem));
+  }
+
+  .content {
+    padding: 1.75rem;
+  }
+}
+
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .label {
+    font-size: 1rem;
+  }
+
+  .skillFields {
+    width: 100% !important;
+  }
+
+  .addButton {
+    width: 100%;
+    transform: translate(0, 1.5rem);
+  }
+
+  .cancelButton,
+  .saveButton {
+    height: 2.5rem;
+    padding: 0.1rem 0.75rem;
+    transform: translate(clamp(10rem, 15rem, 20rem), -1rem);
+  }
+
+  .dividerLast {
+    width: 100%;
+    transform: translate(-1rem, -2rem);
+  }
+  .profileContainer {
+    max-width: 95%;
+    padding: 1rem;
+    transform: translate(clamp(4rem, 8rem, 10rem), clamp(-20rem, -15rem, -10rem));
+  }
+
+  .content {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .nameFields input,
+  .additionalRoles {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .sectionTitle,
+  .sectionTitle1 {
+    font-size: 1.25rem;
+  }
+
+  .sectionDescription {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .selectedRoles {
+    flex-wrap: wrap;
+  }
+
+  .skillsForm {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cancelButton,
+  .saveButton {
+    width: calc(50% - 1rem);
+    transform: none;
+    margin: 0.5rem 0;
+  }
+  .profileContainer {
+    max-width: 100%;
+    padding: 0.75rem;
+    transform: translate(2rem, -10rem);
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .nameFields > *,
+  .roleFields > * {
+    min-width: 100%;
+  }
+
+  .additionalRoles {
+    width: 100%;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .addButton,
+  .cancelButton,
+  .saveButton {
+    min-height: 2.75rem; /* Larger touch targets */
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .profileContainer{
+    margin-left:23rem;
+    width:50rem;
+  }
+}
+

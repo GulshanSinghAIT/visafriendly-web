@@ -1,0 +1,133 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.label {
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.required {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.inputWrapper {
+  position: relative;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.inputWrapper:hover {
+  border-color: #d1d5db;
+}
+
+.inputWrapper:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.inputWrapper.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  color: #111827;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #f9fafb;
+}
+
+/* Error message */
+.errorMessage {
+  font-size: 0.75rem;
+  color: #ef4444;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  animation: slideIn 0.2s ease;
+}
+
+.errorIcon {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .input {
+    height: 44px;
+    padding: 0.625rem 0.875rem;
+    font-size: 1rem; /* Prevent zoom on iOS */
+  }
+  
+  .label {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input {
+    height: 40px;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .inputWrapper {
+    border-width: 1px;
+  }
+  
+  .inputWrapper:focus-within {
+    border-width: 2px;
+  }
+}
+

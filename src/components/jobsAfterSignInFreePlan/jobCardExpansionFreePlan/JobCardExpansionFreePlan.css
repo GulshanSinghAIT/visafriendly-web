@@ -1,0 +1,221 @@
+.completeJobDetails{
+    display: flex;
+padding: 32px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid var(--Border, #D9D9D9);
+background: var(--White-bg, #FFF);
+height: 1028px;
+}
+
+.completeJobDetailsInner{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.completeJobHeader{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+
+.headerJobDetails{
+    display: flex;
+width: 387px;
+align-items: center;
+gap: 16px;
+}
+
+.jobListingJobSub{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 4px;
+align-self: stretch;
+width: 189px;
+}
+
+.mainDisplayTitle{
+    color: var(--Primary-text-clr, #000);
+    text-align: left;
+width: 395px;
+font-family: Gellix;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.mainDisplayCompany{
+    color: var(--Secondary-text-clr, #545251);
+text-align: left;
+width: 300px;
+
+
+/* Sub content 2 */
+font-family: Gellix;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 127.273% */
+}
+
+.mainDisplayLocation{
+    color: var(--Secondary-text-clr, #545251);
+text-align: center;
+
+/* Sub content 2 */
+font-family: Gellix;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 127.273% */
+}
+
+.headerJobLogos{
+    display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.headerJobLogos button{
+    display: flex;
+padding: 16px 32px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 16px;
+border: 1px solid var(--Accent-clr, #313DEB);
+background: var(--Accent-clr, #313DEB);
+color: #FFF;
+font-family: Gellix;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.jobLogosInner{
+    display: flex;
+height: 61px;
+padding: 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 12px;
+border: 0.5px solid #313DEB;
+background: #FFF;
+}
+
+.jobLogosInnerInner{
+    display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.jobLogosInnerInner svg{
+    width: 30px;
+height: 30px;
+}
+
+.horizontalLineMain{
+    width: 791px;
+height: 1px;
+background: var(--Border, #D9D9D9);
+}
+
+.mainDescription{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.mainDescriptionHeader{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 18px;
+}
+
+.mainDescriptionHeaderConH{
+    color: var(--Primary-text-clr, #000);
+font-family: Gellix;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+}
+
+.mainDescriptionHeaderConSH{
+    color: var(--Secondary-text-clr, #545251);
+font-family: Gellix;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 127.273% */
+}
+
+.mainD{
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.mainDescription{
+    max-height: 791px;
+overflow-y: scroll;
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+.mainDescription::-webkit-scrollbar{
+    display: none;
+}
+
+.mainDescription .delPopup img{
+    width: 55px;
+height: 55px;
+}
+
+.delContentButtons{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 43px;
+align-self: stretch;
+}
+
+.delContentButtons h2{
+    color: var(--Overlays-Modal-Title-Color, #1F2937);
+text-align: center;
+font-family: Gellix;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.14px;
+}
+
+.delContentButtons button{
+text-align: center;
+
+/* Button text */
+font-family: Gellix;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 115%; /* 23px */
+}

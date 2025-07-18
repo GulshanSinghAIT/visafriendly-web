@@ -1,0 +1,47 @@
+.avatar {
+  border-radius: 50%;
+  background-color: rgba(49, 61, 235, 1);
+  width: clamp(5rem, 7.95rem, 9rem);
+  height: clamp(5rem, 7.95rem, 9rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(2.5rem, 3.325rem, 4rem);
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .avatar {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .avatar {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.75rem;
+  }
+}
+
+/* For high-resolution displays */
+@media screen and (min-width: 120rem) { /* 1920px */
+  .avatar {
+    width: 9rem;
+    height: 9rem;
+    font-size: 4rem;
+  }
+}

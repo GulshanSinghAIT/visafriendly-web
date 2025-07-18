@@ -1,0 +1,30 @@
+.closeButton {
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .iconWrapper {
+    border-radius: 0.4vw;
+    display: flex;
+    min-height: 1.9vw;
+    width: 1.9vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 1.55vw;
+  }

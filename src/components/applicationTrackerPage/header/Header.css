@@ -1,0 +1,274 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 85px;
+    background: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 7.12px;
+  }
+  
+  .logo-icon {
+    width: 51.62px;
+    height: 51.62px;
+    border-radius: 11.47px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-icon img{
+    border-radius: 12px;
+  }
+  
+  .logo-text {
+    font-family: 'Gellix';
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-link {
+    font-family: 'Gellix';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .action-icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+  }
+
+  .profile{
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    background:  #FFF;
+    box-shadow: 0px 8px 3.9px 1px rgba(159, 159, 159, 0.10);
+    position: absolute;
+    z-index: 1000 !important;
+    list-style-type: none ;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    width: 416px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .profileHeader{
+    border-radius: 12px;
+    display: flex;
+    padding: 16px  20px;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    background:  #F3F4F6;
+  }
+  .profileDetails{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+  }
+
+  .profileDetails img{
+    border-radius: 999px;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+width: 64px;
+align-items: flex-start;
+align-self: stretch;
+  }
+
+  .profileName{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+align-items: flex-start;
+  }
+
+  .profileName h2{
+    margin: 0px;
+    color:  #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    letter-spacing: 0.14px;
+  }
+
+  .profileName p{
+    margin: 0px;
+    color: #545251;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+  
+  .avatar {
+    width: 46px;
+    height: 46px;
+    background: #313deb;
+    border-radius: 999px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar span {
+    font-family: 'Gellix', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    color: #ffffff;
+  }
+
+  .profileMid{
+    display: flex;
+    padding: 24px 24px 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    
+  }
+
+  .refs{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+  }
+
+  .profileMids{
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: #1F2937;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.12px;
+  }
+
+  .hrDiv hr{
+    height:  1px;
+    align-self: stretch;
+    width: 100%;
+    margin: 0px;
+    background: #E5E7EB;
+  }
+
+  .hrDiv{
+    padding : 8px;
+    width: 100%;
+  }
+
+  .logout{
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    
+  }
+
+  .logout a{
+    display: flex;
+    padding:  8px 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color:  #545251;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.12px;
+  }
+
+  .Progress .CircularProgressbar .CircularProgressbar-path{
+    stroke : var(--Accent-clr, #313DEB);
+    stroke-linecap: unset;
+  }
+
+  .Progress .CircularProgressbar .CircularProgressbar-text{
+    fill: #313DEB;
+font-family: "Gellix";
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 128.571% ;
+
+  }
+
+  .Progress{
+    width: 60px;
+height: 60px;
+  }
+
+  .CircularProgressbar{
+    border: white;
+  }
+
+  .pricing{
+    display: flex;
+align-items: center;
+gap: var(--Navigations-Navs-Tabs-Spacings-Inline-Gap-Between, 8px);
+flex: 1 0 0;
+  }
+
+.Plans{
+  border-radius: var(--Components-Badge-Circular-Border-Radius, 999px);
+background: rgba(49, 61, 235, 0.15);
+display: flex;
+padding: var(--Components-Badge-Spacing-Y-SM, 1px) var(--Components-Badge-Spacing-X-SM, 3px);
+align-items: center;
+gap: var(--Components-Badge-Gap-Between-SM, 1px);
+}
+
+.Plans div{
+  color: var(--Accent-clr, #313DEB);
+font-family: Gellix;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+letter-spacing: 0.05px;
+}

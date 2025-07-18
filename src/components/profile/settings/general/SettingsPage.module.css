@@ -1,0 +1,526 @@
+/* Modern Settings Page Styles */
+.pageContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 2rem;
+  max-width:80em;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 37%;
+  position: sticky;
+  top: 2rem;
+  transform: translateY(0);
+}
+
+.mainContent {
+  width: 63%;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+  padding: 2.5rem;
+  margin-top: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.mainContent:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #6b7280;
+}
+
+.breadcrumbInactive {
+  color: #9ca3af;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbInactive:hover {
+  color: #6b7280;
+}
+
+.breadcrumbActive {
+  color: #374151;
+  font-weight: 600;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.pageDescription {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.profileSection,
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.profilePictureContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.avatarContainer {
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.avatarContainer:hover {
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatarPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.avatarIcon {
+  width: 60px;
+  height: 60px;
+  opacity: 0.8;
+}
+
+.uploadOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.uploadProgress {
+  width: 80%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: #10b981;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.uploadSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.uploadButton {
+  background: #313deb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.uploadButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.uploadButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.removeButton {
+  background: white;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.removeButton:hover {
+  background: #fef2f2;
+  border-color: #f87171;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.fileName {
+  color: #374151;
+  font-weight: 500;
+}
+
+.fileSize {
+  color: #6b7280;
+}
+
+.uploadHint {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  margin: 1rem 0;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.cancelButton {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.cancelButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.saveButton {
+  background:#313deb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.saveButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.saveButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  background: #9ca3af;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 1rem;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loadingText {
+  color: #6b7280;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Notification System */
+.notification {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.notification.show {
+  transform: translateX(0);
+}
+
+.notification.success {
+  background: #10b981;
+  color: white;
+}
+
+.notification.error {
+  background: #ef4444;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .pageContainer {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .mainContent {
+    padding: 2rem;
+  }
+  
+  .profilePictureContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .avatarContainer {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .mainContent {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+  
+  .buttonRow {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cancelButton,
+  .saveButton {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .notification {
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    transform: translateY(-100%);
+  }
+  
+  .notification.show {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageContainer {
+    padding: 0.5rem;
+  }
+  
+  .mainContent {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .profilePictureContainer {
+    padding: 1rem;
+  }
+  
+  .avatarContainer {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .avatarIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .uploadButton,
+  .removeButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* High contrast mode */
+
+
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .mainContent,
+  .avatarContainer,
+  .uploadButton,
+  .saveButton,
+  .cancelButton,
+  .removeButton,
+  .notification {
+    transition: none;
+  }
+  
+  .spinner,
+  .loadingSpinner {
+    animation: none;
+  }
+}

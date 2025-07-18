@@ -1,0 +1,49 @@
+.statCard {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.statNumber {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Gellix';
+  font-size: 2.6em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: center;
+  margin-bottom: 0.3646em;
+}
+
+.statLabel {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Gellix';
+  font-size: 0.85em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .statLabel{
+    
+    font-size: 0.5em;
+  }
+  .statNumber{
+    font-size: 2.2em;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .statLabel{
+    font-size: 0.50em;
+  }
+  .statNumber{
+    font-size: 1.2em;
+  }
+}

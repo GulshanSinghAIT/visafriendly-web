@@ -1,0 +1,126 @@
+/* MonthlyStreakCalendar.css */
+.react-calendar {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    width: 100%;
+  }
+  
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background: none;
+    border: none;
+  }
+  /* Center all calendar tiles */
+.react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 2.2em;
+    min-width: 2.2em;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 1.1rem;
+    border-radius: 0.5em;
+    transition: background 0.2s;
+    padding: 0;
+  }
+  
+  /* Hide the default date number for streak days */
+  .streak-day-bright abbr,
+  .streak-day-faded abbr {
+    color: transparent !important;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+  }
+  
+  /* Center the fire emoji */
+  .streak-fire {
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0 auto;
+  }
+  .streak-fire.faded {
+    opacity: 0.3;
+    filter: grayscale(1);
+  }
+  .streak-fire.bright {
+    opacity: 1;
+    filter: none;
+  }
+
+
+  .react-calendar__navigation button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #222;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    font-weight: 600;
+  }
+  
+  .react-calendar__navigation__label {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    pointer-events: none;
+  }
+  
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #888;
+    text-transform: none;
+    background: none;
+    border: none;
+  }
+  
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 0.25em 0;
+  }
+  
+  .react-calendar__tile {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.2em 0 0.2em 0;
+    min-height: 2.2em;
+    min-width: 2.2em;
+    border-radius: 0.5em;
+    transition: background 0.2s;
+  }
+  .streak-day abbr {
+    color: transparent !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .streak-fire {
+    font-size: 1.3em;
+    filter: none;
+  }
+  .streak-fire.faded {
+    opacity: 0.3;
+    filter: grayscale(0.4);
+  }
+  .streak-date {
+    color: #bbb;
+    font-weight: 600;
+    font-size: 1em;
+  }

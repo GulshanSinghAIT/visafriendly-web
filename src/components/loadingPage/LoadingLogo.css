@@ -1,0 +1,152 @@
+  .mainLoad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Gellix', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .visa-friendly-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    
+  }
+  
+  .logo-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.12px;
+  }
+  
+  .logo-image {
+    width: 51.62px;
+    height: 51.62px;
+  }
+  
+  .logo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .logo-text {
+    font-family: 'Gellix', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #000000;
+    margin: 0;
+    padding-top: 4.31px;
+  }
+  
+  .loading-dots {
+    display: inline-block;
+    margin-left: 80px;
+  }
+  
+
+  
+.dots1{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    transform:scale(0.25);
+    background-color: #1CB1D1;
+    animation: scallingone 2s ease-in-out infinite;
+    display: inline-block;
+}  
+
+.dots2{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: #313DEB;
+    transform:scale(0.25);
+    animation: scallingtwo 2s ease-in-out infinite;
+    display: inline-block;
+}  
+
+.dots3{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    transform:scale(0.25);
+    background-color: #1CB1D1;
+    animation: scallingthree 2s ease-in-out infinite;
+    display: inline-block;
+}  
+
+.dots4{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: #313DEB;
+    transform:scale(0.25);
+    animation: scallingfour 2s ease-in-out infinite;
+    display: inline-block;
+}  
+
+@keyframes scallingone {
+    0%,100%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.75);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(0.25);
+    }
+}
+
+@keyframes scallingtwo {
+    0%,100%{
+        transform: scale(0.75);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.75);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+}
+
+@keyframes scallingthree {
+    0%,100%{
+        transform: scale(0.5);
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(0.75);
+    }
+}
+
+@keyframes scallingfour {
+    0%,100%{
+        transform: scale(0.25);
+    }
+    25%{
+        transform: scale(0.25);
+    }
+    50%{
+        transform: scale(0.25);
+    }
+    75%{
+        transform: scale(1);
+    }
+}

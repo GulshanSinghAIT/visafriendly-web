@@ -1,0 +1,81 @@
+.modal {
+    justify-content: center;
+    border-radius: 0.8vw;
+    background: var(--Overlays-Modal-Bg-Color, #fff);
+    box-shadow: 0 1vw 0.65vw 0 rgba(0, 0, 0, 0.03),
+      0 0.4vw 0.25vw 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: flex;
+    max-width: 32.7vw;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.6vw;
+  }
+  
+  .content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: Gellix, sans-serif;
+    text-align: center;
+  }
+  
+  .successIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 5vw;
+    cursor: pointer;
+  }
+  
+  .title {
+    color: var(--Overlays-Modal-Title-Color, #1f2937);
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 0.8vw;
+  }
+  
+  .message {
+    color: var(--Secondary-text-clr, #545251);
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 0.8vw;
+    width: 100%;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    margin-top: 1.6vw;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1.2vw;
+  }
+  
+  @media (max-width: 991px) {
+    .modal {
+      padding: 0 1vw;
+      max-width: 90vw;
+    }
+    
+    .content {
+      max-width: 100%;
+    }
+    
+    .message {
+      max-width: 100%;
+      font-size: 3vw;
+    }
+    
+    .title {
+      font-size: 4vw;
+    }
+    
+    .successIcon {
+      width: 10vw;
+    }
+    
+    .buttonGroup {
+      max-width: 100%;
+    }
+  }

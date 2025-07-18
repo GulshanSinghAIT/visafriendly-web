@@ -1,0 +1,604 @@
+.profileContainer {
+  max-width: clamp(30rem, 49.335rem, 60rem);
+  margin: 0 auto;
+  padding: 1.5rem;
+  transform: translate(clamp(12rem, 16.375rem, 20rem), clamp(-30rem, -27.425rem, -20rem));
+  max-height: auto;
+}
+
+.container {
+  border-radius: 0.625rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: clamp(0.4rem, 0.521rem, 0.6rem);
+  padding: clamp(1.25rem, 1.563rem, 1.75rem);
+  margin-top: clamp(1.25rem, 1.667rem, 2rem);
+}
+
+.mainContent {
+  align-self: stretch;
+  display: flex;
+  min-width: clamp(10rem, 12.5rem, 15rem);
+  width: 100%;
+  max-width: clamp(35rem, 48.698rem, 55rem);
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+}
+
+.titleWrapper {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.242rem, 1.4rem);
+  line-height: 1.8;
+}
+
+.title {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+  transform: translate(clamp(-8rem, -7rem, -6rem), 0);
+}
+
+.subtitle {
+  color: #545251;
+  flex: 1;
+  width: 100%;
+  gap: clamp(0.6rem, 0.8rem, 1rem);
+}
+
+.experienceCard {
+  border-radius: 0.417rem;
+  background: #fff;
+  display: flex;
+  margin-top: clamp(1.75rem, 2.083rem, 2.5rem);
+  width: 100%;
+  max-width: clamp(35rem, 46.615rem, 50rem);
+  flex-direction: column;
+  font-weight: 500;
+  padding: clamp(0.875rem, 1.042rem, 1.25rem);
+  padding-right: clamp(2rem, 2.7rem, 3rem);
+  padding-bottom: clamp(1.25rem, 1.6rem, 2rem);
+  border: 1px solid #D9D9D9;
+}
+
+.cardContent {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+}
+
+.companyLogo {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.417rem;
+  width: clamp(2.25rem, 2.883rem, 3.5rem);
+}
+
+.experienceDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.experienceHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+  font-size: clamp(1rem, 1.242rem, 1.4rem);
+  flex-wrap: wrap;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .container {
+    flex-direction: column;
+  }
+
+  .mainContent {
+    max-width: 100%;
+  }
+
+  .title {
+    transform: translate(-5rem, 0);
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .profileContainer {
+    transform: translate(clamp(6rem, 8rem, 10rem), clamp(-25rem, -20rem, -15rem));
+  }
+
+  .experienceCard {
+    padding: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  .title {
+    transform: translate(-3rem, 0);
+  }
+
+  .experienceHeader {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .profileContainer {
+    padding: 1rem;
+    transform: translate(1rem, -15rem);
+  }
+
+  .container {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .title {
+    transform: translate(-1rem, 0);
+    font-size: 1.25rem;
+  }
+
+  .experienceCard {
+    padding: 0.875rem;
+    margin-top: 1.5rem;
+  }
+
+  .companyLogo {
+    width: 2.25rem;
+    border-radius: 0.417rem;
+
+  }
+
+  .experienceHeader {
+    font-size: 1rem;
+    gap: 0.75rem;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .experienceCard {
+    padding: 1.25rem;
+  }
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: auto 0;
+}
+
+.jobTitle {
+  color: #1f2937;
+  font-weight: 600;
+  letter-spacing: 0.006rem;
+  font-size: clamp(1.1rem, 1.25rem, 1.4rem);
+}
+
+.companyName {
+  color: #313deb;
+  line-height: clamp(1.5rem, 1.963rem, 2.25rem);
+  font-size: clamp(1rem, 1.19rem, 1.3rem);
+}
+
+.duration {
+  color: #545251;
+  font-size: clamp(0.875rem, 1.15rem, 1.25rem);
+  letter-spacing: 0.005rem;
+}
+
+.deleteIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(1rem, 1.3rem, 1.5rem);
+  margin: auto 0;
+  transform: translate(clamp(0.8rem, 1.2rem, 1.4rem), -1rem);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.editIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(0.875rem, 1rem, 1.2rem);
+  margin: auto 0;
+  transform: translate(clamp(1.4rem, 1.8rem, 2rem), -1rem);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.description {
+  color: #545251;
+  font-size: clamp(0.875rem, 1.15rem, 1.25rem);
+  letter-spacing: 0.002rem;
+  margin-top: clamp(0.875rem, 1.042rem, 1.25rem);
+  white-space: pre-line;
+  list-style-type: disc;
+  line-height: clamp(1.25rem, 1.43rem, 1.6rem);
+  transform: translate(1rem, 0);
+}
+
+.description li::marker {
+  transform: scale(0.2);
+}
+
+li {
+  margin-bottom: -0.5rem;
+}
+
+.addExperience {
+  color: #313deb;
+  margin-top: clamp(1rem, 1.198rem, 1.4rem);
+  font-weight: 500;
+  font-size: clamp(1rem, 1.142rem, 1.25rem);
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.experienceForm {
+  border-radius: 0.625rem;
+  background: #e2e2e2;
+  display: flex;
+  margin-top: clamp(1.75rem, 2.083rem, 2.5rem);
+  width: 100%;
+  max-width: clamp(35rem, 46.563rem, 50rem);
+  flex-direction: column;
+  padding: clamp(0.875rem, 1.042rem, 1.25rem);
+}
+
+.formContent {
+  display: flex;
+  width: 100%;
+  max-width: clamp(35rem, 44.271rem, 48rem);
+  flex-direction: column;
+}
+
+.formField {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: clamp(1.25rem, 1.458rem, 1.75rem);
+}
+
+.fieldLabel {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.2rem, 1.4rem);
+  margin-bottom: clamp(0.15rem, 0.208rem, 0.25rem);
+}
+
+.fieldInput {
+  border-radius: 0.417rem;
+  background: #fff;
+  min-height: clamp(2.25rem, 2.604rem, 3rem);
+  width: 100%;
+  padding: clamp(0.75rem, 0.929rem, 1rem) clamp(0.75rem, 0.833rem, 1rem);
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 0.833rem, 1rem);
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .description {
+    transform: translate(0.75rem, 0);
+  }
+
+  .deleteIcon,
+  .editIcon {
+    transform: translate(0.8rem, -0.75rem);
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .jobTitle {
+    font-size: 1.1rem;
+  }
+
+  .companyName {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .duration {
+    font-size: 0.875rem;
+  }
+
+  .description {
+    transform: translate(0.5rem, 0);
+    font-size: 0.875rem;
+  }
+
+  .experienceForm {
+    padding: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .description {
+    transform: none;
+  }
+
+  .deleteIcon,
+  .editIcon {
+    transform: translate(0.5rem, -0.5rem);
+  }
+
+  .fieldInput {
+    min-height: 2.25rem;
+    padding: 0.625rem;
+  }
+}
+
+/* Hover effects */
+@media (hover: hover) {
+  .deleteIcon:hover,
+  .editIcon:hover {
+    transform: translate(1.2rem, -1rem) scale(1.1);
+  }
+
+  .addExperience:hover {
+    color: #2631bc;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .fieldInput {
+    min-height: 2.75rem; /* Larger touch target */
+  }
+
+  .deleteIcon,
+  .editIcon {
+    padding: 0.5rem;
+    margin: -0.5rem;
+  }
+}
+
+.fieldInput1 {
+  border: 1px solid #E5E7EB !important;
+  border-radius: 0.417rem !important;
+  padding: clamp(0.875rem, 0.977rem, 1.1rem) clamp(0.625rem, 0.729rem, 0.875rem) !important;
+  font-weight: 500 !important;
+  font-size: clamp(1rem, 1.138rem, 1.25rem) !important;
+  color: #6B7280 !important;
+  background-color: #FFFFFF !important;
+  width: 100% !important;
+  appearance: none !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.833rem center !important;
+  padding-right: 2.083rem !important;
+}
+
+.fieldInput1::placeholder,
+.fieldInput::placeholder {
+  font-size: clamp(0.875rem, 1.1rem, 1.25rem);
+  font-weight: 500;
+}
+
+.dateFields {
+  display: flex;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+  flex-wrap: wrap;
+}
+
+.dateField {
+  flex: 1;
+  min-width: clamp(10rem, 12.5rem, 15rem);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.875rem, 1.042rem, 1.25rem);
+  margin-top: clamp(0.5rem, 0.625rem, 0.75rem);
+  margin-bottom: clamp(1rem, 1.302rem, 1.5rem);
+}
+
+.checkboxInput {
+  width: clamp(1.125rem, 1.338rem, 1.5rem);
+  height: clamp(1rem, 1.238rem, 1.4rem);
+  border: 1px solid #b4b4b8;
+  border-radius: 0.208rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  color: #545251;
+  font-size: clamp(1rem, 1.138rem, 1.25rem);
+}
+
+.descriptionInput {
+  min-height: clamp(8rem, 9.375rem, 10rem);
+  padding: clamp(0.625rem, 0.729rem, 0.875rem) clamp(0.75rem, 0.833rem, 1rem);
+  font-size: clamp(0.75rem, 0.833rem, 1rem);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(1rem, 1.25rem, 1.5rem);
+  margin-top: clamp(1.75rem, 2.083rem, 2.5rem);
+}
+
+.button {
+  min-height: clamp(2.25rem, 2.604rem, 3rem);
+  width: clamp(7rem, 8.854rem, 10rem);
+  border-radius: 0.417rem;
+  font-size: clamp(0.875rem, 1.033rem, 1.25rem);
+  font-weight: 600;
+  padding: clamp(0.5rem, 0.677rem, 0.875rem) clamp(2.5rem, 2.821rem, 3rem);
+  margin-top: clamp(-2.5rem, -2.083rem, -1.75rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelButton {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.saveButton {
+  background: #313deb;
+  color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.plus {
+  width: clamp(1.25rem, 1.5rem, 1.75rem);
+  height: clamp(1.25rem, 1.5rem, 1.75rem);
+  margin-right: clamp(0.625rem, 0.8rem, 1rem);
+}
+
+.add {
+  display: flex;
+}
+
+.editInput {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.editTextarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  min-height: 6.25rem;
+  resize: vertical;
+}
+
+.editActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.saveButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.saveButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.errorMessage {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 1.25rem;
+  color: #666;
+}
+
+/* Media Queries */
+@media screen and (max-width: 48rem) {
+  .dateFields {
+    flex-direction: column;
+  }
+
+  .dateField {
+    min-width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .formActions {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Hover states */
+@media (hover: hover) {
+  .button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .saveButton:hover:not(:disabled) {
+    background: #2631bc;
+  }
+
+  .cancelButton:hover {
+    background: #f5f5f5;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .checkboxInput {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .button {
+    padding: 0.75rem 2rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+ 
+  .profileContainer{
+    transform: translate(19rem,-27.5rem);
+  }
+ }

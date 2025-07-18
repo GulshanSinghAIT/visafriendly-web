@@ -1,0 +1,33 @@
+.navigation {
+    display: flex;
+    min-width: 12.5vw;
+    align-items: center;
+    gap: 2.08vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2;
+    margin: auto 0;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 0.31vw;
+    transition: opacity 0.2s;
+  }
+  
+  .navLink:hover {
+    opacity: 0.8;
+  }
+  
+  .navLink:focus {
+    outline: 0.104vw solid #313DEB;
+    outline-offset: 0.104vw;
+  }
+  
+  @media (max-width: 991px) {
+    .navigation {
+      max-width: 100%;
+    }
+  }

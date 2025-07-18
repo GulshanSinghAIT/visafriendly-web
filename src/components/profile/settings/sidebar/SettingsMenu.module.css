@@ -1,0 +1,150 @@
+.container {
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.header {
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.menuWrapper {
+  flex: 1;
+  padding: 0.75rem;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItemContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  padding: clamp(0.5rem, 0.69rem, 0.875rem) clamp(0.875rem, 1.11rem, 1.25rem);
+  font-size: clamp(0.875rem, 1.11rem, 1.25rem);
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 0.56rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menuItem:hover {
+  background-color: rgba(107, 114, 128, 0.1);
+}
+
+.menuItem.active {
+  background-color: rgba(49, 61, 235, 1);
+  color: #fff;
+}
+
+.menuItem.active:hover {
+  background-color: rgba(49, 61, 235, 0.9);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    min-height: auto;
+    border-radius: 8px;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .subtitle {
+    font-size: 0.8125rem;
+  }
+
+  .menuWrapper {
+    padding: 0.5rem;
+  }
+}
+
+/* Focus States */
+.container:focus-within {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .container {
+    transition: none;
+  }
+}
+
+/* Hover States */
+@media (hover: hover) {
+  .menuItem:hover:not(.active) {
+    transform: translateX(0.25rem);
+  }
+}
+
+/* Touch Devices */
+@media (hover: none) {
+  .menuItem {
+    padding: 0.875rem 1.25rem;
+  }
+
+  .menuItem:active {
+    background-color: rgba(107, 114, 128, 0.2);
+  }
+}
+
+/* Focus States */
+.menuItem:focus-visible {
+  outline: 2px solid #313deb;
+  outline-offset: -2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .container,
+  .menuItem {
+    transition: none !important;
+  }
+}

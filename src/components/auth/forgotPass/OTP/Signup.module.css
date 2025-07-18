@@ -1,0 +1,183 @@
+.signupWrapper {
+  max-width: 520px;
+  text-align: left;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.form {
+  margin-top: 15px;
+}
+
+.formFields {
+  margin-bottom: 15px;
+}
+
+.formFields label {
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputWrapper {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  max-width: 420px;
+}
+
+.input {
+  padding: 10px 14px;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 525;
+  text-align: left;
+}
+
+.input::placeholder {
+  text-align: left;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: #313deb;
+  color: #ffffff;
+  padding: 11px;
+  font-size: 19px;
+  font-weight: 550;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-top: 30px;
+}
+
+.loginPrompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  /* margin-left: 90px; */
+}
+
+.loginText {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.loginLink {
+  background: none;
+  border: none;
+  font-size: 18px;
+
+  cursor: pointer;
+  margin-left: 8px;
+  margin-top: 0px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  max-width: 500px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.dividerText {
+  padding: 0 5px;
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* 
+.googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 9px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 520px;
+  font-weight: 550;
+  margin-top: 25px;
+} */
+
+/* .googleIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+} */
+
+.otpContainer {
+  text-align: center;
+}
+
+.otpLabel {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+.otpInputs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 0.5rem;
+}
+
+.otpInput {
+  width: 75px;
+  height: 49px;
+  text-align: center;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.otpInput:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+@media (max-width: 691px) {
+  .otpInputs {
+    gap: 10px;
+  }
+  .otpInput {
+    max-width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+  }
+
+}

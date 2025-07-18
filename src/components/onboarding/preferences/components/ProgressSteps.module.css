@@ -1,0 +1,186 @@
+.stepsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.stepsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  height: 4px;
+  flex: 1;
+  background-color: #e2e8f0;
+  transition: background-color 0.3s ease;
+}
+
+.line.completed {
+  background-color: #313DEB;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  border: 3px solid #e2e8f0;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.circle.active {
+  border-color: #313DEB;
+  color: #313DEB;
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.circle.completed {
+  background-color: #313DEB;
+  border-color: #313DEB;
+  color: #ffffff;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+  text-align: center;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.activeTitle {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.completedTitle {
+  color: #313DEB;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .stepsContainer {
+    padding: 2.5rem 1.5rem;
+    max-width: 900px;
+  }
+
+  .circle {
+    width: 1.875rem;
+    height: 1.875rem;
+    font-size: 0.7rem;
+  }
+
+  .stepTitle {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stepsContainer {
+    padding: 2rem 1rem;
+  }
+
+  .circle {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.65rem;
+    border-width: 2px;
+  }
+
+  .line {
+    height: 3px;
+  }
+
+  .stepTitle {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stepsContainer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.6rem;
+    border-width: 2px;
+  }
+
+  .line {
+    height: 2px;
+  }
+
+  .stepTitle {
+    font-size: 0.625rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Hover Effects */
+@media (hover: hover) {
+  .circle:hover {
+    transform: scale(1.05);
+  }
+
+  .circle.active:hover {
+    transform: scale(1.15);
+  }
+}
+
+/* Focus States */
+.circle:focus-visible {
+  outline: 2px solid #313DEB;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .circle,
+  .line,
+  .stepTitle {
+    transition: none;
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  display: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  min-height: 650px;
+}

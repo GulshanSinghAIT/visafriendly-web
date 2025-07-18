@@ -1,0 +1,179 @@
+.profileContainer {
+  max-width: clamp(30rem, 49.335rem, 60rem);
+  margin: 0 auto;
+  padding: 1.5rem;
+  transform: translate(clamp(12rem, 16.375rem, 20rem), clamp(-30rem, -27.425rem, -20rem));
+  max-height: auto;
+}
+
+.mainContainer {
+  background-color: #FFFFFF;
+  border-radius: 0.625rem;
+  padding: clamp(0.4rem, 0.5208rem, 0.6rem);
+  margin-top: clamp(1.25rem, 1.6667rem, 2rem);
+  min-height: clamp(15rem, 20rem, 25rem);
+  border: 1px solid var(--Border, #D9D9D9);
+  gap: clamp(1.5rem, 2rem, 2.5rem);
+}
+
+.contentWrapper {
+  max-width: clamp(40rem, 50.7813rem, 60rem);
+  margin: 0 auto;
+  padding: clamp(1rem, 1.1979rem, 1.4rem) clamp(1.2rem, 1.4063rem, 1.6rem) clamp(6rem, 7.6563rem, 9rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 2rem, 2.5rem);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: clamp(1.25rem, 1.6667rem, 2rem);
+  flex-wrap: wrap;
+  gap: clamp(0.875rem, 1.0417rem, 1.25rem);
+}
+
+.title {
+  color: rgba(31, 41, 55, 1);
+  font-size: clamp(1.125rem, 1.3417rem, 1.5rem);
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+  min-width: clamp(10rem, 12.5rem, 15rem);
+  transform: translate(clamp(-14rem, -12rem, -10rem), 0);
+}
+
+.deleteAllButton {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 0.625rem, 0.75rem);
+  background: none;
+  border: none;
+  color: rgba(221, 32, 37, 1);
+  font-size: clamp(1rem, 1.2375rem, 1.4rem);
+  font-weight: 400;
+  cursor: pointer;
+  padding: clamp(0.3rem, 0.4167rem, 0.5rem);
+  transition: all 0.2s ease;
+}
+
+.deleteAllButton:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.deleteIcon {
+  width: clamp(1.25rem, 1.6021rem, 1.75rem);
+  height: clamp(1.25rem, 1.6021rem, 1.75rem);
+  object-fit: contain;
+}
+
+.alertsList {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 1.6667rem, 2rem);
+  margin-bottom: clamp(1.25rem, 1.6667rem, 2rem);
+}
+
+.createAlertButton {
+  display: flex;
+  color: #313DEB;
+  font-size: clamp(1rem, 1.1938rem, 1.3rem);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-top: clamp(-2.25rem, -1.9rem, -1.5rem);
+  margin-bottom: clamp(-8rem, -7rem, -6rem);
+  transition: all 0.2s ease;
+}
+
+.plus {
+  width: clamp(1.25rem, 1.4rem, 1.6rem);
+  height: clamp(1.25rem, 1.4rem, 1.6rem);
+  margin-right: clamp(0.5rem, 0.6rem, 0.75rem);
+  margin-top: clamp(0.15rem, 0.2rem, 0.25rem);
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .contentWrapper {
+    max-width: 90%;
+    padding: 1rem 1.2rem 6rem;
+  }
+
+  .title {
+    transform: translate(-8rem, 0);
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .mainContainer {
+    min-height: 15rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    transform: translate(-4rem, 0);
+  }
+
+  .deleteAllButton {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .contentWrapper {
+    padding: 1rem 0.875rem 5rem;
+  }
+
+  .title {
+    transform: none;
+    font-size: 1.125rem;
+  }
+
+  .createAlertButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .createAlertButton,
+  .deleteAllButton {
+    transition: none;
+  }
+}
+
+@media screen and (forced-colors: active) {
+  .deleteAllButton,
+  .createAlertButton {
+    border: 1px solid currentColor;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .deleteAllButton,
+  .createAlertButton {
+    padding: 0.75rem;
+  }
+
+  .deleteAllButton:hover,
+  .createAlertButton:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+ 
+  .profileContainer{
+    transform: translate(19rem,-27.5rem);
+  }
+ }

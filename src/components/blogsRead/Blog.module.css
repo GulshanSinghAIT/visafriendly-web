@@ -1,0 +1,162 @@
+.blogContainer {
+  background: #faf9f9;
+  min-height: 100vh;
+}
+
+.blogContent {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  margin-bottom: calc(185px + 1vw);
+}
+
+.blogHeader {
+  margin-bottom: 4rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 2.75rem;
+  cursor: pointer;
+  margin-top: 2.2rem;
+}
+
+.backIcon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.blogTitle {
+  font-weight: 700;
+  font-size: 2.56rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.blogMeta {
+  display: flex;
+  gap: 6.25rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #545251;
+  margin-bottom: 3.125rem;
+  justify-content: space-between;
+}
+
+.headerImage {
+  width: 100%;
+  border-radius: 1.5rem;
+  aspect-ratio: 2.43;
+  object-fit: contain;
+}
+
+.blogSection {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.sectionContent {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  color: #545251;
+  text-align: left;
+  margin-bottom: 1.56rem;
+}
+
+.itemsList {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  color: #545251;
+  text-align: left;
+}
+
+.listItem {
+  margin-bottom: 1.5rem;
+}
+
+.listItem strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.blog {
+  display: flex;
+  position: absolute;
+  transform: translate(42vw, -7vw);
+  cursor: pointer;
+}
+
+.nextBlog {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.arr {
+  width: 2rem;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .blogContainer {
+    padding: 1.25rem;
+  }
+
+  .blogTitle {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .blogHeader {
+    margin-bottom: 2.5rem;
+  }
+
+  .blogMeta {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .headerImage {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .blogContent {
+    padding: 0 1.25rem;
+  }
+
+  .blogTitle {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.875rem;
+  }
+
+  .blogHeader {
+    margin-bottom: 1.875rem;
+  }
+
+  .blogMeta {
+    gap: 0.625rem;
+  }
+}

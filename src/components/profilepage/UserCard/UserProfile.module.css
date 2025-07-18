@@ -1,0 +1,32 @@
+.editWrapper {
+  transform: translate(clamp(2rem, 2.825rem, 3.5rem), clamp(-2.5rem, -2.275rem, -2rem));
+  width: 1.8em;
+  height: 1.8em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit {
+  width: clamp(0.875rem, 1rem, 1.15rem);
+  height: clamp(0.875rem, 1rem, 1.15rem);
+  color: #545251;
+}
+
+@media (max-width: 640px) {
+  .editWrapper {
+    transform: translate(clamp(1.5rem, 2rem, 2.5rem), clamp(-2rem, -1.75rem, -1.5rem));
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  .edit {
+    width: clamp(0.75rem, 0.875rem, 1rem);
+    height: clamp(0.75rem, 0.875rem, 1rem);
+  }
+}

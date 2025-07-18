@@ -1,0 +1,30 @@
+.button {
+    border-radius: 0.75vw;
+    font: 500 1.1vw/1 Gellix, sans-serif;
+    padding: 1.125vw 1vw;
+    min-width: 15vw;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .primary {
+    background-color: rgba(49, 61, 235, 1);
+    color: var(--Components-Button-Solid-Red-Placeholder-Color, #fff);
+    border: none;
+  }
+  
+  .secondary {
+    background: var(--Components-Button-White-Bg-Color, #fff);
+    color: var(--Components-Button-White-Dark-Placeholder-Color, #1f2937);
+    border: 0.0625vw solid var(--Components-Button-White-Border-Color, #e5e7eb);
+    box-shadow: 0 0.0625vw 0.125vw 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  @media (max-width: 61.9375vw) {
+    .button {
+      font-size: 2.5vw;
+      padding: 2vw 1.5vw;
+      min-width: 20vw;
+    }
+  }

@@ -1,0 +1,168 @@
+.navItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.navLink {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.navLink:hover {
+  cursor: pointer;
+  transform: translateY(-1px); /* Subtle hover effect */
+}
+
+.navLinkActive {
+  background-color: #313DEB;
+}
+
+.navLinkInactive {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.35rem, 0.42rem, 0.5rem);
+  justify-content: start;
+  padding: 0.7em 1em;
+}
+
+.inline {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.icon {
+  align-self: stretch;
+  display: flex;
+  min-height: clamp(0.9rem, 1.04rem, 1.2rem);
+  align-items: center;
+  justify-content: center;
+  width: clamp(0.75rem, 0.9rem, 1rem);
+  margin: auto 0;
+}
+
+.iconActive {
+  color: white;
+  filter: brightness(0) invert(1) !important;
+}
+
+.iconImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: clamp(1.25rem, 1.53rem, 1.75rem);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.title {
+  align-self: stretch;
+  margin: auto 0;
+  font-family: Gellix, sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 1rem, 1.125rem);
+  line-height: 1;
+}
+
+.titleActive {
+  color: #fff;
+}
+
+.titleInactive {
+  color: #1f2937;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .navItem {
+    border-radius: 1.25rem;
+  }
+
+  .navLink {
+    border-radius: 0.5rem;
+  }
+
+  .content {
+    padding: 0.65rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .navItem {
+    border-radius: 1rem;
+  }
+
+  .content {
+    padding: 0.5rem 0.65rem;
+  }
+
+  .icon {
+    min-height: 0.9rem;
+    width: 0.75rem;
+  }
+
+  .iconImage {
+    width: 1.25rem;
+  }
+
+  .title {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .content {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .inline {
+    gap: 0.3rem;
+  }
+
+  .iconImage {
+    width: 1rem;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .navLink {
+    padding: 0.25rem; /* Additional padding for touch targets */
+  }
+
+  .content {
+    padding: 0.75rem 1rem;
+  }
+
+  .navLink:hover {
+    transform: none; /* Remove hover effect on touch devices */
+  }
+}
+
+/* For high contrast/accessibility */
+@media (prefers-contrast: more) {
+  .navLinkActive {
+    background-color: #000;
+  }
+
+  .titleActive {
+    color: #fff;
+  }
+
+  .titleInactive {
+    color: #000;
+  }
+}

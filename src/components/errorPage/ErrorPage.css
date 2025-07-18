@@ -1,0 +1,80 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Gellix', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+    max-width: 673px;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+  }
+  
+  .oops-text {
+    font-size: 248px;
+    font-weight: 800;
+    line-height: 100%;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(235,67,53,1) 0%, rgba(49,61,235,0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  .error-message {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  .home-button {
+    background-color: #313deb;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .previous-button {
+    background: none;
+    border: none;
+    color: #1339d7;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+  }
+  
+  

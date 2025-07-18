@@ -1,0 +1,381 @@
+.alertCard {   
+  padding: clamp(0.5rem, 0.625rem, 0.75rem) clamp(0.5rem, 1.0125rem, 1.25rem);
+  width: 101%;
+  border-radius: clamp(0.6rem, 0.8rem, 1rem);
+  border: 1px solid #d2d2d2;
+}
+
+.alertContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.875rem, 1.0417rem, 1.25rem);
+}
+
+.companyLogo {
+  width: clamp(3rem, 3.825rem, 4.5rem);
+  height: clamp(3rem, 3.725rem, 4.5rem);
+  object-fit: contain;
+}
+
+.jobInfo {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.15rem, 0.2083rem, 0.25rem);
+}
+
+.jobTitle {
+  color: rgba(31, 41, 55, 1);
+  font-size: clamp(1rem, 1.1475rem, 1.25rem);
+  font-weight: 510;
+  letter-spacing: 0.0573rem;
+}
+
+.location {
+  color: rgba(84, 82, 81, 1);
+  font-size: clamp(0.875rem, 1.0896rem, 1.25rem);
+  line-height: 1;
+}
+
+.frequency {
+  color: rgba(84, 82, 81, 1);
+  font-size: clamp(0.875rem, 1.0633rem, 1.25rem);
+  line-height: 1.4;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: clamp(0.3rem, 0.4167rem, 0.5rem);
+  transition: opacity 0.2s ease;
+}
+
+.deleteButton:hover {
+  opacity: 0.8;
+}
+
+.editIcon {
+  width: clamp(0.875rem, 1.1017rem, 1.25rem);
+  height: clamp(0.875rem, 1.1017rem, 1.25rem);
+  transform: translate(-0.5rem, -1.1rem);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.deleteIcon {
+  width: clamp(0.875rem, 1.1817rem, 1.25rem);
+  height: clamp(0.875rem, 1.1817rem, 1.25rem);
+  transform: translate(0, -1.04rem);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.editInput {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+.editSelect {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  background-color: white;
+  height: 2.25rem;
+}
+
+.editActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .alertCard {
+    padding: 0.5rem 0.875rem;
+  }
+
+  .companyLogo {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .alertContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .companyInfo {
+    width: 100%;
+  }
+
+  .editIcon,
+  .deleteIcon {
+    transform: none;
+  }
+
+  .editActions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .alertCard {
+    padding: 0.5rem;
+  }
+
+  .companyLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .jobTitle,
+  .location,
+  .frequency {
+    font-size: 0.875rem;
+  }
+}
+
+/* Hover effects */
+@media (hover: hover) {
+  .editIcon:hover,
+  .deleteIcon:hover {
+    transform: scale(1.1);
+  }
+
+  .deleteButton:hover {
+    opacity: 0.7;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .deleteButton {
+    padding: 0.75rem;
+  }
+
+  .editIcon,
+  .deleteIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    margin: -0.25rem;
+  }
+}
+
+.saveButton,
+.cancelButton {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: clamp(0.875rem, 1rem, 1.125rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-left: 0.9375rem;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+.saveButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.cancelButton:hover {
+  background-color: #d32f2f;
+  transform: translateY(-1px);
+}
+
+.errorMessage {
+  color: #f44336;
+  font-size: clamp(0.75rem, 0.8125rem, 0.875rem);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.companyInfo {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.jobInfo {
+  flex: 1;
+}
+
+.alertsList {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.noAlerts {
+  text-align: center;
+  padding: 1.25rem;
+  color: #666;
+  font-style: italic;
+  background-color: #f9f9f9;
+  border-radius: 0.25rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 1.25rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .saveButton,
+  .cancelButton {
+    padding: 0.3125rem 0.625rem;
+  }
+
+  .actionButtons {
+    gap: 0.375rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .companyInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .actionButtons {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  .saveButton,
+  .cancelButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .saveButton,
+  .cancelButton {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+  .noAlerts,
+  .loading {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .saveButton,
+  .cancelButton,
+  .editButton,
+  .deleteButton {
+    min-height: 2.75rem;
+  }
+
+  .editButton,
+  .deleteButton {
+    padding: 0.5rem;
+  }
+
+  .saveButton:hover,
+  .cancelButton:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: more) {
+  .saveButton {
+    background-color: #006400;
+  }
+
+  .cancelButton {
+    background-color: #8b0000;
+  }
+
+  .errorMessage {
+    color: #ff0000;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .saveButton,
+  .cancelButton,
+  .editButton,
+  .deleteButton {
+    transition: none;
+  }
+}

@@ -1,0 +1,185 @@
+.optionWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.optionWrapper:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.radioButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.container {
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+}
+
+.containerSelected {
+  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #3b82f6;
+  width: 8px;
+  height: 8px;
+  transition: transform 0.2s ease;
+  animation: scaleIn 0.2s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.optionText {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #374151;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  flex: 1;
+  user-select: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .optionWrapper {
+    padding: 0.625rem;
+    gap: 0.625rem;
+  }
+
+  .optionText {
+    font-size: 0.8125rem;
+  }
+
+  .radioButton {
+    width: 18px;
+    height: 18px;
+  }
+
+  .container,
+  .containerSelected {
+    width: 14px;
+    height: 14px;
+  }
+
+  .circle {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Hover States */
+@media (hover: hover) {
+  .optionWrapper:hover .container {
+    border-color: #3b82f6;
+  }
+
+  .optionWrapper:hover .circle {
+    transform: scale(1.1);
+  }
+}
+
+/* Focus States */
+.radioButton:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+.optionWrapper:focus-within {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Touch Devices */
+@media (hover: none) {
+  .optionWrapper {
+    padding: 1rem;
+  }
+
+  .radioButton {
+    width: 24px;
+    height: 24px;
+  }
+
+  .container,
+  .containerSelected {
+    width: 20px;
+    height: 20px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* High Contrast Mode */
+@media (forced-colors: active) {
+  .container {
+    border: 2px solid currentColor;
+  }
+
+  .containerSelected {
+    border: 2px solid highlight;
+  }
+
+  .circle {
+    background-color: highlight;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .container,
+  .circle,
+  .optionWrapper {
+    transition: none;
+  }
+
+  .circle {
+    animation: none;
+  }
+}

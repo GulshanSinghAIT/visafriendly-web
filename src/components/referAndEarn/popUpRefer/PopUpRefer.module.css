@@ -1,0 +1,200 @@
+.redeemPopup{
+    display: flex;
+width: 34.0625vw;
+padding: 1.67vw;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.67vw;
+position: relative;
+border-radius: 0.834vw;
+background: var(--Overlays-Modal-Bg-Color, #FFF);
+
+/* Drop Shadow/xl */
+box-shadow: 0vw 1.04167vw 0.6770834vw 0vw rgba(0, 0, 0, 0.03), 0vw 0.4167vw 0.260417vw 0vw rgba(0, 0, 0, 0.08);
+}
+
+.redeemContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.834vw;
+    align-self: stretch;
+}
+
+.redeemContentHead{
+    color: var(--Overlays-Modal-Title-Color, #1F2937);
+text-align: center;
+
+/* Web app/card title */
+font-family: Gellix;
+font-size: 1.875vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+align-self: stretch;
+}
+
+.redeemContentSubHead{
+    color: var(--Secondary-text-clr, #545251);
+text-align: center;
+
+/* Web app/para 3 */
+font-family: Gellix;
+font-size: 1.145834vw;
+font-style: normal;
+font-weight: 400;
+line-height:  127.273% ;
+align-self: stretch;
+}
+
+.reddemButtons{
+    display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 1.25vw;
+align-self: stretch;
+}
+
+.redeemButtonCancel{
+    display: flex;
+padding: 0.9375vw var(--Components-Button-Spacing-X, 0.834vw);
+justify-content: center;
+align-items: center;
+gap: var(--Components-Button-Gap-Between, 0.520834vw);
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 0.625vw;
+border: 0.0520834vw solid var(--Components-Button-White-Border-Color, #E5E7EB);
+background: var(--Components-Button-White-Bg-Color, #FFF);
+
+box-shadow: 0vw 0.0520834vw 0.104167vw 0vw rgba(0, 0, 0, 0.05);
+color: var(--Components-Button-White-Dark-Placeholder-Color, #1F2937);
+text-align: center;
+
+font-family: Gellix;
+font-size: 1.04167vw;
+font-style: normal;
+font-weight: 500;
+line-height: 135% ;
+}
+
+.redeemButtonContinue{
+    display: flex;
+padding: 0.9375vw var(--Components-Button-Spacing-X, 0.834vw);
+justify-content: center;
+align-items: center;
+gap: var(--Components-Button-Gap-Between, 0.520834vw);
+flex: 1 0 0;
+align-self: stretch;
+    border-radius: 0.625vw;
+background: #313DEB;
+
+color: var(--Components-Button-Solid-Blue-Placeholder-Color, #FFF);
+text-align: center;
+
+/* Web app/Button text */
+font-family: Gellix;
+font-size: 1.04167vw;
+font-style: normal;
+font-weight: 500;
+line-height:  135% ;
+}
+
+.cancelPopUp{
+    display: flex;
+width: 3.0729167vw;
+height: 3.0729167vw;
+justify-content: center;
+align-items: center;
+
+position: absolute;
+right: 0.520834vw;
+top: 0.520834vw;
+cursor: pointer;
+}
+
+.cancelPopUp svg{
+    height: 1.6145834vw;
+    width: 1.6145834vw;
+}
+
+.cancelPopUp :hover{
+    background-color: #6c6c6e;
+    border-radius: 99px;
+}
+
+.congrats{
+    display: flex;
+width: 34.0625vw;
+padding: 1.67vw;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.67vw;
+border-radius: 0.834vw;
+background: var(--Overlays-Modal-Bg-Color, #FFF);
+
+/* Drop Shadow/xl */
+box-shadow: 0vw 1.04167vw 0.6770834vw 0vw rgba(0, 0, 0, 0.03), 0vw 0.4167vw 0.260417vw 0vw rgba(0, 0, 0, 0.08);
+}
+
+.congrats img{
+    width: 12.1875vw;
+height: 0.5834vw;
+}
+
+.congratsMessage{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.834vw;
+align-self: stretch;
+}
+
+.congratsMessageHead{
+    color: var(--Overlays-Modal-Title-Color, #1F2937);
+text-align: center;
+
+/* Web app/card title */
+font-family: Gellix;
+font-size: 1.875vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+align-self: stretch;
+}
+
+.congratsMessageSubHead{
+    align-self: stretch;
+    color: var(--Secondary-text-clr, #545251);
+text-align: center;
+
+/* Web app/para 3 */
+font-family: Gellix;
+font-size: 1.145834vw;
+font-style: normal;
+font-weight: 400;
+line-height:  127.273% ;
+}
+
+.congratsNav{
+    display: flex;
+padding: 0.9375vw var(--Components-Button-Spacing-X, 0.834vw);
+justify-content: center;
+align-items: center;
+gap: var(--Components-Button-Gap-Between, 0.520834vw);
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 0.625vw;
+background: #313DEB;
+color: var(--Components-Button-Solid-Blue-Placeholder-Color, #FFF);
+text-align: center;
+
+/* Web app/Button text */
+font-family: Gellix;
+font-size: 1.04167vw;
+font-style: normal;
+font-weight: 500;
+line-height: 135% ;
+}

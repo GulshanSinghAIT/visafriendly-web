@@ -1,0 +1,150 @@
+.blogContainer {
+  background-color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-bottom: 0;
+}
+
+.heroSection {
+  display: flex;
+  height: 30.625vw;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 11.09375vw 0 24.14vw 0.0520834vw;
+}
+
+.heroContent {
+  align-self: center;
+  display: flex;
+  width: 91.145833vw;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1.04167vw;
+}
+
+.blogTitle {
+  width: 53.229167vw;
+  max-width: 100%;
+  font-size: 4.010417vw;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  margin: 0;
+}
+
+.featuredBlog {
+  display: flex;
+  margin-top: 2.604167vw;
+  width: 100%;
+  align-items: center;
+  gap: 2.0834vw;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.featuredImage {
+  aspect-ratio: 1.8;
+  object-fit: cover;
+  object-position: center;
+  width: 35.677083vw;
+  border-radius: 1.25vw;
+  align-self: stretch;
+  min-width: 12.5vw;
+  flex-grow: 1;
+  margin: auto 0;
+}
+
+.featuredContent {
+  align-self: stretch;
+  display: flex;
+  min-width: 12.5vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  width: 35.364583vw;
+  margin: auto 0;
+}
+
+.blogMeta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 2.0834vw 5.20834vw;
+  font-size: 1.145833vw;
+  color: var(--Secondary-text-clr, #545251);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.date {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.blogContentWrapper {
+  display: flex;
+  margin-top: 0.83334vw;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.blogHeading {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.822917vw;
+  font-weight: 600;
+  margin: 0;
+}
+
+.blogDescription {
+  color: var(--Secondary-text-clr, #545251);
+  font-size: 1.145833vw;
+  font-weight: 400;
+  line-height: 1.458334vw;
+  margin: 0.72917vw 0 0 0;
+}
+
+.readMoreLink {
+  color: rgba(49, 61, 235, 1);
+  font-size: 1.145833vw;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0.83334vw;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.readMoreLink:hover {
+  opacity: 0.8;
+}
+
+.readMoreLink:focus {
+  outline: 0.104167vw solid rgba(49, 61, 235, 0.5);
+  outline-offset: 0.104167vw;
+}
+
+.mainContent {
+  padding: 2.0834vw 0vw;
+  max-width: 91.145833vw;
+  margin: 0 3.5vw;
+  width: 100%;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 20.229167vw 1fr;
+  gap: 2.0834vw;
+  align-items: start;
+}

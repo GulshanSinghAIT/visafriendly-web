@@ -1,0 +1,50 @@
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #fff;
+  padding: 0.2em;
+  gap: 0.4em;
+  border-radius: 0.5rem;
+  border: 1px solid #D9D9D9;
+}
+
+/* Media Queries */
+@media screen and (max-width: 75rem) { /* 1200px */
+  .navigationContainer {
+    gap: 0.5rem;
+    padding: 0.3rem 0.4rem;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* 768px */
+  .navigationContainer {
+    padding: 0.25rem 0.35rem;
+    gap: 0.4rem;
+    justify-content: center; /* Center items on mobile */
+  }
+}
+
+@media screen and (max-width: 30rem) { /* 480px */
+  .navigationContainer {
+    padding: 0.2rem 0.3rem;
+    gap: 0.3rem;
+    transform: translate(0, 0.4rem);
+  }
+}
+
+/* For touch devices */
+@media (hover: none) {
+  .navigationContainer {
+    padding: 0.4rem 0.5rem; /* Larger padding for touch devices */
+    gap: 0.75rem; /* Larger gaps for touch targets */
+  }
+}
+
+/* For larger screens */
+@media screen and (min-width: 120rem) { /* 1920px */
+  .navigationContainer {
+    gap: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+}

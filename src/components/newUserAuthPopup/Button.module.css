@@ -1,0 +1,35 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vw;
+    width: 100%;
+    padding: 0.7vw 1.8vw;
+    font-size: 1.08vw;
+    font-weight: 500;
+    font-family: Gellix, sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .default {
+    color: var(--Components-Button-White-Dark-Placeholder-Color, #1f2937);
+    border: 0.0625vw solid var(--Components-Button-White-Border-Color, #e5e7eb);
+    background: var(--Components-Button-White-Bg-Color, #fff);
+    box-shadow: 0 0.0625vw 0.125vw 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .primary {
+    color: var(--Components-Button-Solid-Blue-Placeholder-Color, #fff);
+    background-color: rgba(49, 61, 235, 1);
+    border: none;
+  }
+  
+  .button:focus {
+    outline: 0.125vw solid #4f46e5;
+    outline-offset: 0.125vw;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
