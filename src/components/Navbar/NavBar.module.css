@@ -14,35 +14,8 @@
 
 }
 
-.navbar {
-  background:  transparent !important;
-  display: flex;
-  max-width: 91em;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
-  padding: clamp(1.25rem, 1.67rem, 2rem) clamp(3rem, 4.427rem, 5rem);
-  width: 100%;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: clamp(0.25rem, 0.365rem, 0.5rem);
-  color: #000;
-  font-family: "Gellix";
-  font-size: clamp(1.5rem, 1.875rem, 2.25rem);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 
-.logoImage {
-  width: clamp(2rem, 2.689rem, 3rem);
-  border-radius: clamp(0.4rem, 0.573rem, 0.7rem);
-  aspect-ratio: 1;
-  object-fit: contain;
-}
 
 .navLinks {
   display: flex;
@@ -56,7 +29,7 @@
   color: #000;
   text-align: center;
   font-family: "Gellix";
-  font-size: clamp(1rem, 1.25rem, 1.5rem);
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: clamp(1.75rem, 2.083rem, 2.25rem);
@@ -75,8 +48,10 @@
 
 .signInButton,
 .signUpButton {
-  padding: clamp(0.75rem, 0.834rem, 1rem) clamp(1.25rem, 1.67rem, 2rem);
-  border-radius: 0.834rem;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  font-size: 1em;
+  font-weight: 500;
   font: inherit;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -84,22 +59,12 @@
 
 .signInButton {
   color: #313DEB;
-  font-family: "Gellix";
-  font-size: clamp(1rem, 1.25rem, 1.5rem);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   border: 1px solid rgba(49, 61, 235, 1);
   background: transparent;
 }
 
 .signUpButton {
   color: #FFF;
-  font-family: Gellix;
-  font-size: clamp(1rem, 1.25rem, 1.5rem);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   background-color: rgba(49, 61, 235, 1);
   border: 1px solid rgba(49, 61, 235, 1);
 }

@@ -10,10 +10,17 @@ import { LogoutModal } from "../logoutPopup/LogoutModal";
 import { LogoutModal as LogoutSuccess } from "../logoutSucessPopup/LogoutModal";
 import { useNavigate } from "react-router-dom";
 
-const navItems = [
+const signedInNavItems = [
   { label: "Jobs/ Internships", href: "/allJobsPremiumPlan" },
   { label: "Dashboard", href: "/dashboard" },
   { label: "Pricing", href: "/pricing" },
+];
+
+const signedOutNavItems = [
+  { label: "Jobs/ Internships", href: "/allJobsPremiumPlan" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Blogs", href: "/blogs" },
+  { label: "AboutUs", href: "/about" },
 ];
 
 
@@ -105,20 +112,15 @@ export function NavBarrr() {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Link to="/home">
+    <nav className="flex justify-between items-center max-w-[87em] w-[100%] mx-auto lg:p-5 py-3">
+        <Link to="/home" className="flex items-center gap-2">
           <img
             src={`https://cdn.builder.io/api/v1/image/assets/TEMP/57dd4e5f28379f36428cf0499a5ca6b8bee68bc296209058e54f1a4655eb0ef9?placeholderIfAbsent=true&apiKey=${process.env.REACT_APP_API_KEY}`}
             alt="VisaFriendly Logo"
-            className={styles.logoImage}
+            className=" md:w-12 md:h-12 w-10 h-10"
           />
+          <span className=" md:text-2xl md:font-bold text-lg font-bold">VisaFriendly</span>
         </Link>
-        <Link to="/home">
-          <span className={styles.logoText}>VisaFriendly</span>
-        </Link>
-      </div>
-
       <button
         className={styles.menuToggle}
         onClick={toggleMenu}
@@ -128,17 +130,32 @@ export function NavBarrr() {
       </button>
 
       <div className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-        {navItems.map((item) => (
-          <Link
-            key={item.label}
-            to={item.href}
-            className={`${styles.navLink} ${pathname.includes(item.href) ? styles.activeLink : ""
-              }`}
-            tabIndex="0"
-          >
-            {item.label}
-          </Link>
-        ))}
+        <SignedIn>
+          {signedInNavItems.map((item) => (
+            <Link
+              key={item.label}
+              to={item.href}
+              className={`${styles.navLink} ${pathname.includes(item.href) ? styles.activeLink : ""
+                }`}
+              tabIndex="0"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </SignedIn>
+        <SignedOut>
+          {signedOutNavItems.map((item) => (
+            <Link
+              key={item.label}
+              to={item.href}
+              className={`${styles.navLink} ${pathname.includes(item.href) ? styles.activeLink : ""
+                }`}
+              tabIndex="0"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </SignedOut>
       </div>
       <SignedIn>
         <div className="action-icons  md:min-w-[10em] flex justify-end">
@@ -301,12 +318,3 @@ export function NavBarrr() {
     </nav>
   );
 }
-
-NavBarrr.defaultProps = {
-  logoUrl: "/images/logo.png",
-  navLinks: ["H-1B + Cap-Exempt Jobs", "H-1B Jobs", "Cap-Exempt Jobs"],
-  actionIcons: [
-    { url: "/images/layout-dashboard.png", alt: "Dashboard" },
-    { url: "/images/bookmark.png", alt: "Bookmark" },
-  ],
-};
